@@ -224,36 +224,51 @@ npm run dev
 
 ## 📱 Browser Support
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
+| Browser | Version |
+|---------|---------||
+| 🌐 Chrome | Latest |
+| 🦊 Firefox | Latest |
+| 🧭 Safari | Latest |
+| 💠 Edge | Latest |
+| 📱 Mobile | iOS Safari, Chrome Mobile |
 
-## ⚡ Performance
+## ⚡ Performance Metrics
 
-- Lighthouse Score: 95+
-- First Contentful Paint: < 1.5s
-- Time to Interactive: < 3s
-- Optimized images and lazy loading
-- Minimal JavaScript bundle size
+| Metric | Score |
+|--------|-------|
+| 🏆 Lighthouse Score | 95+ |
+| ⚡ First Contentful Paint | < 1.5s |
+| 🎯 Time to Interactive | < 3s |
+| 🖼️ Image Optimization | Lazy loading enabled |
+| 📦 Bundle Size | Minimal & optimized |
+
+## 🎯 Who This Portfolio Is For
+
+| Audience | What You'll Find |
+|----------|------------------|
+| 💼 **Recruiters** | Comprehensive CV, technical expertise, and work experience |
+| 🎯 **Hiring Managers** | Real-world projects, architecture decisions, and impact metrics |
+| 🤝 **Clients** | Service offerings, project approach, and consultation info |
+| 👨‍💻 **Developers** | Modern React + Vite + Tailwind implementation |
 
 ## 🤝 Contributing
 
 This is a personal portfolio project, but suggestions and improvements are welcome!
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 🎯 Who This Portfolio Is For
-
-- **Recruiters** looking for a Machine Learning Engineer / Software Engineer
-- **Hiring managers** reviewing real-world projects and architecture
-- **Clients** seeking data-driven software and AI solutions
-- **Developers** exploring a modern React + Vite + Tailwind setup
+1. **Fork** the repository
+2. **Create** your feature branch
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. **Commit** your changes
+   ```bash
+   git commit -m 'Add some AmazingFeature'
+   ```
+4. **Push** to the branch
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+5. **Open** a Pull Request
 
 
 ## 📝 License
@@ -262,21 +277,31 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📧 Contact
 
-**Franklyn Oliha**
+<div align="center">
 
-- Portfolio: [www.franklynoliha.com](https://www.franklynoliha.com)
-- LinkedIn: [linkedin.com/in/franklyn-oliha](https://linkedin.com/in/franklyn-oliha)
-- YouTube: [@mudiatech](https://youtube.com/@mudiatech)
-- Email: franklyn.oliha@outlook.com
-- GitHub: [github.com/franklyn-oliha](https://github.com/franklyn-oliha)
+### **Franklyn Oliha**
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-franklynoliha.com-blue?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.franklynoliha.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Franklyn_Oliha-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/franklyn-oliha)
+[![YouTube](https://img.shields.io/badge/YouTube-@mudiatech-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@mudiatech)
+[![Email](https://img.shields.io/badge/Email-franklyn.oliha@outlook.com-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:franklyn.oliha@outlook.com)
+[![GitHub](https://img.shields.io/badge/GitHub-franklyn--oliha-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/franklyn-oliha)
+
+</div>
 
 ## 🙏 Acknowledgments
 
-- React Team for the amazing framework
-- Tailwind Labs for the utility-first CSS framework
-- Vite Team for the lightning-fast build tool
-- All open-source contributors
+- [React Team](https://react.dev/) - Amazing JavaScript framework
+- [Tailwind Labs](https://tailwindcss.com/) - Utility-first CSS framework
+- [Vite Team](https://vitejs.dev/) - Lightning-fast build tool
+- All open-source contributors who make projects like this possible
 
 ---
 
-**Built with ❤️ by Franklyn Oliha**
+<div align="center">
+
+**Built with ❤️ by [Franklyn Oliha](https://www.franklynoliha.com)**
+
+⭐ Star this repo if you find it useful!
+
+</div>
