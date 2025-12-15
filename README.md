@@ -256,7 +256,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Franklyn Oliha**
 
-- Portfolio: [Your Website URL]
+- Portfolio: [www.franklynoliha.com]
 - LinkedIn: [linkedin.com/in/franklyn-oliha](https://linkedin.com/in/franklyn-oliha)
 - YouTube: [@mudiatech](https://youtube.com/@mudiatech)
 - Email: franklyn.oliha@outlook.com
