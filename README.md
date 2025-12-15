@@ -13,7 +13,7 @@ A modern, responsive portfolio website showcasing professional experience, techn
 *Professional summary, CV download and comprehensive technical skills*
 
 ### Clients Page  
-![Client Services](./screenshots/image_3.png)
+![Client Services](./screenshots/image_5_client.png)
 *Service offerings and project approach*
 
 ### Full Page View
