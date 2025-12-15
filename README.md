@@ -22,6 +22,11 @@ Hosted on Netlify with HTTPS, global CDN, and continuous deployment from GitHub.
 ![Home Page Hero Section](./screenshots/image_1.png)
 _Professional hero section with profile image and key highlights_
 
+### About Me Page
+
+![About Me](./screenshots/image_7_about_page.png)
+_Detailed professional background and career journey_
+
 ### Recruiters Page
 
 ![Recruiters - Technical Expertise](./screenshots/image_2.png)
