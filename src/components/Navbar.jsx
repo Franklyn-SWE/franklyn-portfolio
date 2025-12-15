@@ -16,35 +16,35 @@ export default function Navbar() {
 
         {/* Navigation Links - Horizontal scroll on mobile, flex on desktop */}
         <div className="overflow-x-auto scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0 sm:mt-0 mt-2">
-          <div className="flex gap-3 sm:gap-6 text-xs sm:text-sm items-center min-w-max sm:min-w-0 sm:justify-end">
+          <div className="flex gap-4 sm:gap-6 text-sm sm:text-sm items-center min-w-max sm:min-w-0 sm:justify-end">
             <Link
               to="/"
-              className="text-white hover:text-blue-300 transition-colors font-medium whitespace-nowrap"
+              className="text-white hover:text-blue-300 transition-colors font-medium whitespace-nowrap py-2"
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="text-white hover:text-blue-300 transition-colors font-medium whitespace-nowrap"
+              className="text-white hover:text-blue-300 transition-colors font-medium whitespace-nowrap py-2"
             >
               About Me
             </Link>
             <Link
               to="/recruiters"
-              className="text-white hover:text-blue-300 transition-colors font-medium whitespace-nowrap"
+              className="text-white hover:text-blue-300 transition-colors font-medium whitespace-nowrap py-2"
             >
               Recruiters
             </Link>
             <Link
               to="/clients"
-              className="text-white hover:text-blue-300 transition-colors font-medium whitespace-nowrap"
+              className="text-white hover:text-blue-300 transition-colors font-medium whitespace-nowrap py-2"
             >
               Clients
             </Link>
             <a
               href="/Franklyn_Oliha_Data_Scientist_Machine_Learning_Engineer_CV.pdf"
               download
-              className="bg-white text-blue-900 px-4 sm:px-5 py-1.5 sm:py-2 rounded-lg font-semibold hover:bg-blue-100 transition-all shadow-md hover:shadow-lg whitespace-nowrap"
+              className="bg-white text-blue-900 px-5 sm:px-5 py-2 sm:py-2 rounded-lg font-semibold hover:bg-blue-100 transition-all shadow-md hover:shadow-lg whitespace-nowrap text-sm"
             >
               Download CV
             </a>
