@@ -32,10 +32,6 @@ _Professional summary, CV download and comprehensive technical skills_
 ![Client Services](./screenshots/image_5_client_page.png)
 _Service offerings and project approach_
 
-### About Me Page
-
-_Comprehensive professional biography with photo, entrepreneurial ventures, and values_
-
 ### Footer View
 
 ![Portfolio Footer](./screenshots/image_4.png)
@@ -45,15 +41,12 @@ _Footer with contact information and social links_
 
 - **Modern Design**: Clean, professional UI with gradient effects and smooth animations
 - **Responsive Layout**: Fully optimized for desktop, tablet, and mobile devices
-- **Four Main Sections**:
+- **Three Main Sections**:
   - **Home**: Professional profile, skills showcase, and featured projects
-  - **About Me**: Comprehensive biography, entrepreneurial ventures, leadership values, and professional photo
   - **For Recruiters**: Comprehensive professional experience, technical expertise, and CV download
   - **For Clients**: Service offerings, project approach, and contact information
-- **Professional Photo**: Circular profile image with gradient glow effect on About Me page
 - **Dark Navigation**: Elegant gradient navbar and footer for enhanced aesthetics
 - **Interactive Components**: Hover effects, smooth transitions, and engaging animations
-- **Social Integration**: Direct links to LinkedIn, GitHub, email, and CV download
 - **SEO Optimized**: Proper meta tags and semantic HTML structure
 
 ## 🚀 Technologies Used
@@ -127,12 +120,11 @@ The production-ready files will be in the `dist/` folder.
 ```
 franklyn-portfolio/
 ├── public/
-│   ├── profile.jpg          # Your professional photo (Hero section)
-│   ├── photo.jpg            # Your professional photo (About page)
+│   ├── profile.jpg          # Your professional photo
 │   └── cv.pdf               # Your CV/resume
 ├── src/
 │   ├── components/
-│   │   ├── About.jsx        # About/Professional Profile section (Home page)
+│   │   ├── About.jsx        # About/Professional Profile section
 │   │   ├── Footer.jsx       # Site footer with links
 │   │   ├── Hero.jsx         # Hero section with photo
 │   │   ├── Navbar.jsx       # Navigation bar
@@ -140,7 +132,6 @@ franklyn-portfolio/
 │   │   └── Skills.jsx       # Technical skills grid
 │   ├── pages/
 │   │   ├── Home.jsx         # Homepage
-│   │   ├── About.jsx        # About Me page (full biography)
 │   │   ├── Recruiters.jsx   # Page for recruiters
 │   │   └── Clients.jsx      # Page for potential clients
 │   ├── App.jsx              # Main app component with routing
@@ -170,28 +161,19 @@ franklyn-portfolio/
    - Edit professional summary
    - Update statistics (years, projects, etc.)
 
-3. **About Me Page** (`src/pages/About.jsx`)
-
-   - Update comprehensive biography
-   - Edit academic and technical background
-   - Modify entrepreneurial ventures (MudiaTech, Mudia Estate Limited)
-   - Update leadership and collaboration sections
-   - Customize professional focus and values
-   - Add your professional photo as `photo.jpg` in the `public/` folder
-
-4. **Skills** (`src/components/Skills.jsx`)
+3. **Skills** (`src/components/Skills.jsx`)
 
    - Add/remove programming languages
    - Update frameworks and tools
    - Customize skill categories
 
-5. **Projects** (`src/components/Projects.jsx`)
+4. **Projects** (`src/components/Projects.jsx`)
 
    - Replace with your own projects
    - Update descriptions and metrics
    - Change tech stack badges
 
-6. **Professional Experience** (`src/pages/Recruiters.jsx`)
+5. **Professional Experience** (`src/pages/Recruiters.jsx`)
    - Add your work history
    - Update job titles and companies
    - Modify achievements and responsibilities
