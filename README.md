@@ -2,6 +2,13 @@
 
 A modern, responsive portfolio website showcasing professional experience, technical expertise, and projects in Machine Learning Engineering, Software Development, and Data Science.
 
+## 🔗 Live Demo
+
+🌍 **Production Website:**  
+https://www.franklynoliha.com
+
+Hosted on Netlify with HTTPS, global CDN, and continuous deployment from GitHub.
+
 ## 📸 Screenshots
 
 ### Home Page
@@ -59,7 +66,7 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/franklyn-portfolio.git
+   git clone https://github.com/Franklyn-SWE/franklyn-portfolio.git
    cd franklyn-portfolio
    ```
 
@@ -192,48 +199,10 @@ Update email and social links in:
 
 ## 🌐 Deployment
 
-### Deploy to Vercel (Recommended)
+### Production Deployment (Netlify – Live)
 
-1. Install Vercel CLI:
 
-   ```bash
-   npm install -g vercel
-   ```
-
-2. Deploy:
-   ```bash
-   vercel
-   ```
-
-### Deploy to Netlify
-
-1. Build the project:
-
-   ```bash
-   npm run build
-   ```
-
-2. Drag and drop the `dist` folder to [Netlify](https://app.netlify.com)
-
-### Deploy to GitHub Pages
-
-1. Install gh-pages:
-
-   ```bash
-   npm install --save-dev gh-pages
-   ```
-
-2. Add to `package.json`:
-
-   ```json
-   "homepage": "https://yourusername.github.io/franklyn-portfolio",
-   "scripts": {
-     "predeploy": "npm run build",
-     "deploy": "gh-pages -d dist"
-   }
-   ```
-
-3. Deploy:
+ Deploy:
    ```bash
    npm run deploy
    ```
@@ -264,6 +233,14 @@ This is a personal portfolio project, but suggestions and improvements are welco
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## 🎯 Who This Portfolio Is For
+
+- **Recruiters** looking for a Machine Learning Engineer / Software Engineer
+- **Hiring managers** reviewing real-world projects and architecture
+- **Clients** seeking data-driven software and AI solutions
+- **Developers** exploring a modern React + Vite + Tailwind setup
+
+
 ## 📝 License
 
 This project is open source and available under the [MIT License](LICENSE).
@@ -272,7 +249,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Franklyn Oliha**
 
-- Portfolio: [www.franklynoliha.com]
+- Portfolio: [www.franklynoliha.com](https://www.franklynoliha.com)
 - LinkedIn: [linkedin.com/in/franklyn-oliha](https://linkedin.com/in/franklyn-oliha)
 - YouTube: [@mudiatech](https://youtube.com/@mudiatech)
 - Email: franklyn.oliha@outlook.com
@@ -286,5 +263,10 @@ This project is open source and available under the [MIT License](LICENSE).
 - All open-source contributors
 
 ---
+![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_BADGE_ID/deploy-status)
+![React](https://img.shields.io/badge/React-18-blue)
+![Vite](https://img.shields.io/badge/Vite-Fast-purple)
+![Tailwind](https://img.shields.io/badge/TailwindCSS-Utility--First-teal)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 **Built with ❤️ by Franklyn Oliha**
