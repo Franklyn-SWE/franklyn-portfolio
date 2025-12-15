@@ -282,10 +282,10 @@ This project is open source and available under the [MIT License](LICENSE).
 ### **Franklyn Oliha**
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-franklynoliha.com-blue?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.franklynoliha.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Franklyn_Oliha-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/franklyn-oliha)
-[![YouTube](https://img.shields.io/badge/YouTube-@mudiatech-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@mudiatech)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Franklyn_Oliha-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/franklyn-oliha)
+[![YouTube](https://img.shields.io/badge/YouTube-@mudiatech-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@mudiatech)
 [![Email](https://img.shields.io/badge/Email-franklyn.oliha@outlook.com-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:franklyn.oliha@outlook.com)
-[![GitHub](https://img.shields.io/badge/GitHub-franklyn--oliha-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/franklyn-oliha)
+[![GitHub](https://img.shields.io/badge/GitHub-Franklyn--SWE-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Franklyn-SWE)
 
 </div>
 
