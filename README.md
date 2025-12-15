@@ -16,9 +16,9 @@ A modern, responsive portfolio website showcasing professional experience, techn
 ![Client Services](./screenshots/image_5_client_page.png)
 *Service offerings and project approach*
 
-### Full Page View
-![Portfolio Overview](./screenshots/image_4.png)
-*Complete portfolio showcase*
+### Footer View
+![Portfolio Footer](./screenshots/image_4.png)
+*Footer with contact information and social links*
 
 ## 🌟 Features
 
