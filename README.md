@@ -2,7 +2,23 @@
 
 A modern, responsive portfolio website showcasing professional experience, technical expertise, and projects in Machine Learning Engineering, Software Development, and Data Science.
 
-![Portfolio Preview](./preview.png)
+## 📸 Screenshots
+
+### Home Page
+![Home Page Hero Section](./screenshots/image_1.png)
+*Professional hero section with profile image and key highlights*
+
+### Recruiters Page
+![Recruiters - Technical Expertise](./screenshots/image_2.png)
+*Professional summary, CV download and comprehensive technical skills*
+
+### Clients Page  
+![Client Services](./screenshots/image_3.png)
+*Service offerings and project approach*
+
+### Full Page View
+![Portfolio Overview](./screenshots/image_4.png)
+*Complete portfolio showcase*
 
 ## 🌟 Features
 
