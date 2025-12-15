@@ -1,5 +1,12 @@
 # Franklyn Oliha - Professional Portfolio
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3eb8eafb-aba8-4b68-a009-6f1e4bc53448/deploy-status)](https://app.netlify.com/projects/franklynoliha-portfolio/deploys)
+![React](https://img.shields.io/badge/React-18-blue)
+![Vite](https://img.shields.io/badge/Vite-Fast-purple)
+![Tailwind](https://img.shields.io/badge/TailwindCSS-Utility--First-teal)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+
 A modern, responsive portfolio website showcasing professional experience, technical expertise, and projects in Machine Learning Engineering, Software Development, and Data Science.
 
 ## 🔗 Live Demo
@@ -197,15 +204,23 @@ Update email and social links in:
 - `src/pages/Recruiters.jsx` - Recruiter contact section
 - `src/pages/Clients.jsx` - Client contact section
 
+
 ## 🌐 Deployment
 
-### Production Deployment (Netlify – Live)
+### Production (Netlify – Live)
 
+This portfolio is deployed using **Netlify** with continuous deployment from GitHub.
 
- Deploy:
-   ```bash
-   npm run deploy
-   ```
+- **Live URL:** https://www.franklynoliha.com
+- **Hosting:** Netlify
+- **CI/CD:** Automatic deploys on every push to the `master` branch
+- **Security:** HTTPS via Let’s Encrypt
+- **Performance:** Global CDN
+
+### Local Development
+
+```bash
+npm run dev
 
 ## 📱 Browser Support
 
@@ -263,10 +278,5 @@ This project is open source and available under the [MIT License](LICENSE).
 - All open-source contributors
 
 ---
-![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_BADGE_ID/deploy-status)
-![React](https://img.shields.io/badge/React-18-blue)
-![Vite](https://img.shields.io/badge/Vite-Fast-purple)
-![Tailwind](https://img.shields.io/badge/TailwindCSS-Utility--First-teal)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 **Built with ❤️ by Franklyn Oliha**
