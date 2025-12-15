@@ -6,7 +6,6 @@
 ![Tailwind](https://img.shields.io/badge/TailwindCSS-Utility--First-teal)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-
 A modern, responsive portfolio website showcasing professional experience, technical expertise, and projects in Machine Learning Engineering, Software Development, and Data Science.
 
 ## 🔗 Live Demo
@@ -19,20 +18,24 @@ Hosted on Netlify with HTTPS, global CDN, and continuous deployment from GitHub.
 ## 📸 Screenshots
 
 ### Home Page
+
 ![Home Page Hero Section](./screenshots/image_1.png)
-*Professional hero section with profile image and key highlights*
+_Professional hero section with profile image and key highlights_
 
 ### Recruiters Page
-![Recruiters - Technical Expertise](./screenshots/image_2.png)
-*Professional summary, CV download and comprehensive technical skills*
 
-### Clients Page  
+![Recruiters - Technical Expertise](./screenshots/image_2.png)
+_Professional summary, CV download and comprehensive technical skills_
+
+### Clients Page
+
 ![Client Services](./screenshots/image_5_client_page.png)
-*Service offerings and project approach*
+_Service offerings and project approach_
 
 ### Footer View
+
 ![Portfolio Footer](./screenshots/image_4.png)
-*Footer with contact information and social links*
+_Footer with contact information and social links_
 
 ## 🌟 Features
 
@@ -204,7 +207,6 @@ Update email and social links in:
 - `src/pages/Recruiters.jsx` - Recruiter contact section
 - `src/pages/Clients.jsx` - Client contact section
 
-
 ## 🌐 Deployment
 
 ### Production (Netlify – Live)
@@ -219,7 +221,7 @@ This portfolio is deployed using **Netlify** with continuous deployment from Git
 
 ### Local Development
 
-```bash
+````bash
 npm run dev
 
 ## 📱 Browser Support
@@ -259,7 +261,8 @@ This is a personal portfolio project, but suggestions and improvements are welco
 2. **Create** your feature branch
    ```bash
    git checkout -b feature/AmazingFeature
-   ```
+````
+
 3. **Commit** your changes
    ```bash
    git commit -m 'Add some AmazingFeature'
@@ -269,7 +272,6 @@ This is a personal portfolio project, but suggestions and improvements are welco
    git push origin feature/AmazingFeature
    ```
 5. **Open** a Pull Request
-
 
 ## 📝 License
 

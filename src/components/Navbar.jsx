@@ -18,6 +18,12 @@ export default function Navbar() {
             Home
           </Link>
           <Link
+            to="/about"
+            className="text-white hover:text-blue-300 transition-colors font-medium"
+          >
+            About Me
+          </Link>
+          <Link
             to="/recruiters"
             className="text-white hover:text-blue-300 transition-colors font-medium"
           >
