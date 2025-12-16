@@ -42,7 +42,7 @@ export default function Navbar() {
               Clients
             </Link>
             <a
-              href="/Franklyn_Oliha_Data_Scientist_Machine_Learning_Engineer_CV.pdf"
+              href="/Franklyn_Oliha_Data_Scientist_Machine_Learning_Engineer_upd_CV.pdf"
               download
               className="bg-white text-blue-900 px-5 sm:px-5 py-2 sm:py-2 rounded-lg font-semibold hover:bg-blue-100 transition-all shadow-md hover:shadow-lg whitespace-nowrap text-sm"
             >

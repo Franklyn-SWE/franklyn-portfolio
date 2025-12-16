@@ -49,7 +49,7 @@ export default function Hero() {
                 View Featured Projects
               </a>
               <a
-                href="/Franklyn_Oliha_Data_Scientist_Machine_Learning_Engineer_CV.pdf"
+                href="/Franklyn_Oliha_Data_Scientist_Machine_Learning_Engineer_upd_CV.pdf"
                 download
                 className="inline-flex items-center justify-center bg-white text-blue-600 border-2 border-blue-600 px-8 py-3.5 rounded-xl font-semibold hover:bg-blue-50 hover:border-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
               >

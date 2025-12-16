@@ -13,7 +13,7 @@ export default function Recruiters() {
         {/* CV Download Button */}
         <div className="mt-8">
           <a
-            href="/Franklyn_Oliha_Data_Scientist_Machine_Learning_Engineer_CV.pdf"
+            href="/Franklyn_Oliha_Data_Scientist_Machine_Learning_Engineer_upd_CV.pdf"
             download
             className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
           >
@@ -506,7 +506,7 @@ export default function Recruiters() {
         </p>
         <div className="flex flex-wrap gap-4">
           <a
-            href="/Franklyn_Oliha_Data_Scientist_Machine_Learning_Engineer_CV.pdf"
+            href="/Franklyn_Oliha_Data_Scientist_Machine_Learning_Engineer_upd_CV.pdf"
             download
             className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl hover:scale-105 flex items-center gap-2"
           >

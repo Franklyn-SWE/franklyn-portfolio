@@ -280,7 +280,7 @@ export default function About() {
             Send Email
           </a>
           <a
-            href="/Franklyn_Oliha_Data_Scientist_Machine_Learning_Engineer_CV.pdf"
+            href="/Franklyn_Oliha_Data_Scientist_Machine_Learning_Engineer_upd_CV.pdf"
             download
             className="bg-white/20 backdrop-blur text-white border-2 border-white px-8 py-4 rounded-lg font-bold hover:bg-white/30 transition-all flex items-center gap-2"
           >
