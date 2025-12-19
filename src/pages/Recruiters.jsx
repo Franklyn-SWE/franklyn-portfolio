@@ -623,16 +623,6 @@ export default function Recruiters() {
                 )}
               </div>
             </div>
-            <div>
-              <a
-                href="https://github.com/Franklyn-SWE/Customer_Segmentation_Clustering"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-orange-600 hover:text-orange-800 font-semibold text-sm"
-              >
-                💻 View on GitHub →
-              </a>
-            </div>
           </div>
         </div>
       </section>
