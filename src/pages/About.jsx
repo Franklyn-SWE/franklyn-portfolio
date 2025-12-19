@@ -99,13 +99,29 @@ export default function About() {
             Selected projects, technical case studies, and deployment details
             can be found in the{" "}
             <a
-              href="/"
+              href="/#projects"
               className="text-blue-600 hover:text-blue-800 font-semibold underline"
             >
               Projects section
             </a>{" "}
             of this portfolio.
           </p>
+          <div className="mt-6 p-4 bg-gradient-to-r from-slate-50 to-blue-50 rounded-lg border-l-4 border-blue-400">
+            <p className="text-base text-slate-700 leading-relaxed">
+              For early-career academic software engineering projects
+              (2019–2022), access the archived portfolio of foundational
+              full-stack work:
+              <br />
+              <a
+                href="https://franklyn-swe.github.io/portfolio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 font-semibold underline"
+              >
+                https://franklyn-swe.github.io/portfolio/
+              </a>
+            </p>
+          </div>
         </div>
       </section>
 
