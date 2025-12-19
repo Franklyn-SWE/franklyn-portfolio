@@ -3,10 +3,10 @@ export default function Footer() {
     <footer className="bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 py-10 mt-16">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-sm text-slate-300">
+          <div className="text-xs md:text-sm text-slate-300">
             © 2025 Franklyn Oliha. All rights reserved.
           </div>
-          <div className="flex gap-6">
+          <div className="flex gap-4 md:gap-6 text-sm md:text-base">
             <a
               href="https://github.com"
               target="_blank"

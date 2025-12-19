@@ -45,14 +45,18 @@ _Footer with contact information and social links_
 ## 🌟 Features
 
 - **Modern Design**: Clean, professional UI with gradient effects and smooth animations
-- **Responsive Layout**: Fully optimized for desktop, tablet, and mobile devices
-- **Three Main Sections**:
-  - **Home**: Professional profile, skills showcase, and featured projects
-  - **For Recruiters**: Comprehensive professional experience, technical expertise, and CV download
-  - **For Clients**: Service offerings, project approach, and contact information
-- **Dark Navigation**: Elegant gradient navbar and footer for enhanced aesthetics
-- **Interactive Components**: Hover effects, smooth transitions, and engaging animations
+- **Fully Responsive**: Mobile-first design optimized for all screen sizes (mobile, tablet, desktop)
+- **Four Main Pages**:
+  - **Home**: Hero section with featured work showcase
+  - **About Me**: Comprehensive professional background and career journey
+  - **Projects**: Detailed project portfolio with expandable case studies
+  - **Clients**: Service offerings, project approach, and consultation information
+- **Featured Work Section**: Streamlined display of 4 key projects with categories and descriptions
+- **Project Portfolio**: Comprehensive projects page with expandable case studies, tech stacks, and GitHub links
+- **Dark Navigation**: Elegant gradient navbar with mobile-optimized horizontal scroll
+- **Interactive Components**: Hover effects, smooth transitions, and expandable details elements
 - **SEO Optimized**: Proper meta tags and semantic HTML structure
+- **Mobile-Optimized**: Responsive typography, padding, and touch-friendly buttons across all pages
 
 ## 🚀 Technologies Used
 
@@ -125,29 +129,31 @@ The production-ready files will be in the `dist/` folder.
 ```
 franklyn-portfolio/
 ├── public/
-│   ├── profile.jpg          # Your professional photo
-│   └── cv.pdf               # Your CV/resume
+│   ├── profile.jpg                              # Professional hero photo
+│   ├── photo.jpg                                # About page photo
+│   ├── Franklyn_Oliha_..._upd_CV.pdf           # CV/resume file
+│   └── _redirects                               # Netlify SPA routing config
 ├── src/
 │   ├── components/
-│   │   ├── About.jsx        # About/Professional Profile section
-│   │   ├── Footer.jsx       # Site footer with links
-│   │   ├── Hero.jsx         # Hero section with photo
-│   │   ├── Navbar.jsx       # Navigation bar
-│   │   ├── Projects.jsx     # Featured projects showcase
-│   │   └── Skills.jsx       # Technical skills grid
+│   │   ├── Footer.jsx                           # Site footer with social links
+│   │   ├── Hero.jsx                             # Hero section with CTA buttons
+│   │   ├── Navbar.jsx                           # Responsive navigation bar
+│   │   └── Projects.jsx                         # Featured work showcase (Home)
 │   ├── pages/
-│   │   ├── Home.jsx         # Homepage
-│   │   ├── Recruiters.jsx   # Page for recruiters
-│   │   └── Clients.jsx      # Page for potential clients
-│   ├── App.jsx              # Main app component with routing
-│   ├── main.jsx             # Application entry point
-│   └── index.css            # Global styles and animations
-├── index.html               # HTML template
-├── package.json             # Dependencies and scripts
-├── tailwind.config.js       # Tailwind CSS configuration
-├── postcss.config.js        # PostCSS configuration
-├── vite.config.js           # Vite configuration
-└── README.md                # This file
+│   │   ├── Home.jsx                             # Homepage (Hero + Featured Work)
+│   │   ├── About.jsx                            # About Me page
+│   │   ├── Recruiters.jsx                       # Projects & Technical Expertise
+│   │   └── Clients.jsx                          # Client services page
+│   ├── App.jsx                                  # Main app with routing
+│   ├── main.jsx                                 # Application entry point
+│   └── index.css                                # Global styles & utilities
+├── screenshots/                                 # Portfolio screenshots
+├── index.html                                   # HTML template
+├── package.json                                 # Dependencies and scripts
+├── tailwind.config.js                           # Tailwind CSS configuration
+├── postcss.config.js                            # PostCSS configuration
+├── vite.config.js                               # Vite configuration
+└── README.md                                    # This file
 ```
 
 ## 🎨 Customization Guide
@@ -156,32 +162,39 @@ franklyn-portfolio/
 
 1. **Hero Section** (`src/components/Hero.jsx`)
 
-   - Update your name
-   - Modify job titles
-   - Change location and badges
-   - Update bio text
+   - Update your name and job titles
+   - Change location, clearance status, and badges
+   - Update bio text and description
+   - Modify CTA button links
 
-2. **About Section** (`src/components/About.jsx`)
+2. **Featured Work** (`src/components/Projects.jsx`)
 
-   - Edit professional summary
-   - Update statistics (years, projects, etc.)
+   - Replace with your 4 featured projects
+   - Update project titles, categories, and descriptions
+   - Change gradient colors for each project
+   - Update "View All Projects" link destination
 
-3. **Skills** (`src/components/Skills.jsx`)
+3. **About Page** (`src/pages/About.jsx`)
 
-   - Add/remove programming languages
-   - Update frameworks and tools
-   - Customize skill categories
+   - Edit professional bio and background
+   - Update academic credentials
+   - Modify entrepreneurship and leadership sections
+   - Update contact links
 
-4. **Projects** (`src/components/Projects.jsx`)
+4. **Projects Page** (`src/pages/Recruiters.jsx`)
 
-   - Replace with your own projects
-   - Update descriptions and metrics
-   - Change tech stack badges
+   - Add/edit detailed project case studies
+   - Update tech stacks for each project
+   - Modify expandable case study content
+   - Update GitHub repository links
+   - Edit Technical Expertise categories
+   - Update CV download section
 
-5. **Professional Experience** (`src/pages/Recruiters.jsx`)
-   - Add your work history
-   - Update job titles and companies
-   - Modify achievements and responsibilities
+5. **Clients Page** (`src/pages/Clients.jsx`)
+   - Update service offerings
+   - Modify "Why Choose Me" section
+   - Edit process steps
+   - Update contact information and social links
 
 ### Color Scheme
 
@@ -208,9 +221,30 @@ theme: {
 
 Update email and social links in:
 
-- `src/components/Footer.jsx` - Footer links
-- `src/pages/Recruiters.jsx` - Recruiter contact section
-- `src/pages/Clients.jsx` - Client contact section
+- `src/components/Footer.jsx` - Footer social links
+- `src/components/Hero.jsx` - CV download link
+- `src/pages/About.jsx` - About page contact section
+- `src/pages/Recruiters.jsx` - Projects page CV and contact links
+- `src/pages/Clients.jsx` - Client contact and CTA section
+
+### Navigation
+
+Update navigation links in:
+
+- `src/components/Navbar.jsx` - Main navigation menu
+  - Home, About Me, Projects, Clients links
+  - CV download button
+
+### Mobile Optimization
+
+The portfolio is fully mobile-responsive with:
+
+- Responsive typography (text scales: `text-base md:text-lg lg:text-xl`)
+- Responsive padding (padding scales: `p-6 md:p-8`)
+- Mobile-friendly buttons (smaller touch targets on mobile)
+- Horizontal scroll navigation on mobile devices
+- Edge spacing with `px-4` on narrow content areas
+- Touch-optimized interactive elements
 
 ## 🌐 Deployment
 
@@ -253,10 +287,42 @@ npm run dev
 
 | Audience | What You'll Find |
 |----------|------------------|
-| 💼 **Recruiters** | Comprehensive CV, technical expertise, and work experience |
-| 🎯 **Hiring Managers** | Real-world projects, architecture decisions, and impact metrics |
-| 🤝 **Clients** | Service offerings, project approach, and consultation info |
-| 👨‍💻 **Developers** | Modern React + Vite + Tailwind implementation |
+| 💼 **Recruiters** | Detailed projects page with case studies, technical expertise, and CV download |
+| 🎯 **Hiring Managers** | Real-world projects with problem/solution breakdowns and measurable outcomes |
+| 🤝 **Clients** | Service offerings, process workflow, and consultation information |
+| 👨‍💻 **Developers** | Modern React 18 + Vite + Tailwind CSS implementation with mobile-first design |
+| 📱 **Mobile Users** | Fully responsive experience optimized for all screen sizes |
+
+## 📝 Recent Updates (December 2025)
+
+### Home Page Redesign
+- ✅ Removed Professional Profile and Technical Expertise sections
+- ✅ Streamlined to Hero section + Featured Work
+- ✅ Updated "Featured Projects" to "Featured Work"
+- ✅ Added 4 featured projects with category tags
+- ✅ Simplified project cards (removed tech stacks and metrics)
+- ✅ Added "View All Projects" button linking to Projects page
+
+### Mobile Responsiveness
+- ✅ Implemented responsive typography across all pages
+- ✅ Added responsive padding (p-6 md:p-8)
+- ✅ Mobile-optimized buttons and touch targets
+- ✅ Horizontal scroll navigation on mobile
+- ✅ Added edge spacing on narrow content areas
+- ✅ Responsive font sizes (text-base md:text-lg lg:text-xl)
+
+### Projects Page (Recruiters)
+- ✅ Renamed to "Projects & Technical Expertise"
+- ✅ Added 5 main projects with full details
+- ✅ Implemented expandable case studies using `<details>` elements
+- ✅ Added GitHub repository links
+- ✅ Separated Customer Segmentation to "Additional Data Science Work"
+- ✅ Comprehensive Technical Expertise section with categorized skills
+
+### Navigation
+- ✅ Updated navbar link from "Recruiters" to "Projects"
+- ✅ Mobile-friendly horizontal scrolling navigation
+- ✅ Larger touch targets for mobile users
 
 ## 🤝 Contributing
 

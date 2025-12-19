@@ -3,10 +3,10 @@ export default function About() {
     <div className="max-w-6xl mx-auto px-6 py-12">
       <div className="mb-16">
         <div className="text-center mb-8">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             About Franklyn Oliha
           </h1>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto px-4">
             Software Engineer · ML Engineer · Data Scientist
           </p>
         </div>
@@ -24,14 +24,14 @@ export default function About() {
       </div>
 
       <section className="mb-16">
-        <div className="bg-gradient-to-br from-white to-blue-50 p-8 rounded-2xl shadow-lg border border-blue-100">
-          <p className="text-lg text-slate-700 leading-relaxed mb-6">
+        <div className="bg-gradient-to-br from-white to-blue-50 p-6 md:p-8 rounded-2xl shadow-lg border border-blue-100">
+          <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
             Franklyn Oliha is a British software engineer, data scientist, and
             machine learning engineer specialising in the design and deployment
             of production-ready, data-driven systems for real-world use across
             public and private sectors.
           </p>
-          <p className="text-lg text-slate-700 leading-relaxed">
+          <p className="text-base md:text-lg text-slate-700 leading-relaxed">
             He holds an{" "}
             <strong>
               MSc (Distinction) in Data Science & Machine Learning
@@ -46,10 +46,10 @@ export default function About() {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-slate-900">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-slate-900">
           Academic & Technical Background
         </h2>
-        <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-blue-600">
+        <div className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border-l-4 border-blue-600">
           <p className="text-lg text-slate-700 leading-relaxed mb-4">
             Franklyn's background spans software engineering, applied machine
             learning, and data science, enabling him to build end-to-end systems

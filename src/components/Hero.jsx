@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="mb-24 py-16 px-6 bg-gradient-to-b from-white via-blue-50/30 to-white">
+    <section className="mb-24 bg-gradient-to-b from-white via-blue-50/30 to-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-[1.2fr,1fr] gap-12 md:gap-16 items-center">
           {/* Content */}
@@ -25,9 +25,7 @@ export default function Hero() {
               <span className="bg-slate-100 text-slate-700 px-3 md:px-4 py-2 rounded-full font-semibold whitespace-nowrap border border-slate-200">
                 📍 Manchester, UK
               </span>
-              <span className="bg-slate-100 text-slate-700 px-3 md:px-4 py-2 rounded-full font-semibold whitespace-nowrap border border-slate-200">
-                💼 4+ Years
-              </span>
+
               <span className="bg-slate-100 text-slate-700 px-3 md:px-4 py-2 rounded-full font-semibold whitespace-nowrap border border-slate-200">
                 🎓 MSc Distinction
               </span>
@@ -36,22 +34,22 @@ export default function Hero() {
             <p className="text-base md:text-lg text-slate-600 leading-relaxed max-w-2xl">
               I design and deploy production-ready machine learning and software
               systems used in real-world environments — from NLP-driven risk
-              detection to scalable web applications. Experienced in delivering
-              secure, data-driven solutions that create measurable business and
-              social impact.
+              detection to scalable web applications. My work focuses on
+              building secure, data-driven solutions that deliver measurable
+              technical, business, and social impact.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-2">
               <a
                 href="#projects"
-                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-3.5 rounded-xl font-semibold hover:from-blue-700 hover:to-indigo-700 transition-all shadow-lg hover:shadow-xl hover:scale-105 duration-300"
+                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 md:px-8 py-3 md:py-3.5 rounded-xl font-semibold text-sm md:text-base hover:from-blue-700 hover:to-indigo-700 transition-all shadow-lg hover:shadow-xl hover:scale-105 duration-300"
               >
-                View Featured Projects
+                View Featured Work
               </a>
               <a
                 href="/Franklyn_Oliha_Data_Scientist_Machine_Learning_Engineer_upd_CV.pdf"
                 download
-                className="inline-flex items-center justify-center bg-white text-blue-600 border-2 border-blue-600 px-8 py-3.5 rounded-xl font-semibold hover:bg-blue-50 hover:border-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                className="inline-flex items-center justify-center bg-white text-blue-600 border-2 border-blue-600 px-6 md:px-8 py-3 md:py-3.5 rounded-xl font-semibold text-sm md:text-base hover:bg-blue-50 hover:border-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 Download CV
               </a>

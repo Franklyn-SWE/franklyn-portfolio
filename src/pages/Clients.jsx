@@ -2,23 +2,23 @@ export default function Clients() {
   return (
     <div className="max-w-6xl mx-auto px-6 py-12">
       <div className="mb-12 text-center">
-        <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
           Transform Your Business with AI
         </h1>
-        <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+        <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto px-4">
           End-to-end machine learning and software solutions that drive
           measurable results. From concept to deployment.
         </p>
       </div>
 
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-slate-900 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-slate-900 text-center">
           Services & Solutions
         </h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="group bg-gradient-to-br from-white to-purple-50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-purple-100 hover:scale-105">
-            <div className="text-5xl mb-4">🤖</div>
-            <h3 className="font-bold text-2xl mb-4 text-slate-900">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+          <div className="group bg-gradient-to-br from-white to-purple-50 p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-purple-100 hover:scale-105">
+            <div className="text-4xl md:text-5xl mb-4">🤖</div>
+            <h3 className="font-bold text-xl md:text-2xl mb-4 text-slate-900">
               Machine Learning Solutions
             </h3>
             <ul className="text-slate-700 space-y-3 text-lg">
@@ -135,10 +135,10 @@ export default function Clients() {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-slate-900 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-slate-900 text-center">
           Why Choose Me?
         </h2>
-        <div className="bg-gradient-to-br from-white to-slate-50 p-10 rounded-2xl shadow-xl border border-slate-200">
+        <div className="bg-gradient-to-br from-white to-slate-50 p-6 md:p-10 rounded-2xl shadow-xl border border-slate-200">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-5">
               <div className="flex items-start gap-4">
@@ -279,11 +279,11 @@ export default function Clients() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 p-12 rounded-3xl shadow-2xl text-white text-center">
-        <h2 className="text-4xl font-bold mb-4">
+      <section className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 p-6 md:p-12 rounded-3xl shadow-2xl text-white text-center">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
           Ready to Build Something Amazing?
         </h2>
-        <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+        <p className="text-base md:text-lg lg:text-xl mb-8 max-w-2xl mx-auto opacity-90 px-4">
           Let's discuss your project. I offer a free 30-minute consultation to
           explore how I can help transform your ideas into production-ready
           solutions.
@@ -291,7 +291,7 @@ export default function Clients() {
         <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-8">
           <a
             href="mailto:franklyn.oliha@outlook.com"
-            className="bg-white text-blue-600 px-10 py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl hover:scale-105 flex items-center gap-3"
+            className="bg-white text-blue-600 px-6 md:px-10 py-3 md:py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl hover:scale-105 flex items-center gap-2 md:gap-3"
           >
             <span className="text-2xl">📧</span>
             <span>Email Me</span>
@@ -324,8 +324,8 @@ export default function Clients() {
             <span>YouTube</span>
           </a>
         </div>
-        <div className="space-y-2 text-white/80">
-          <p className="text-lg">
+        <div className="space-y-2 text-white/80 px-4">
+          <p className="text-sm md:text-base lg:text-lg">
             📧 franklyn.oliha@outlook.com · olihafosa@gmail.com
           </p>
           <p className="text-lg">
