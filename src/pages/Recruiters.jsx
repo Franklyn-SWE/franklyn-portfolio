@@ -3,103 +3,636 @@ export default function Recruiters() {
     <div className="max-w-6xl mx-auto px-6 py-12">
       <div className="mb-16 text-center">
         <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-          For Recruiters
+          Projects & Technical Expertise
         </h1>
         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-          SC Cleared · 4+ Years Experience · Available for Contract & Permanent
-          Roles
+          Applied software, machine learning, and data science systems built for
+          real-world use
         </p>
-
-        {/* CV Download Button */}
-        <div className="mt-8">
-          <a
-            href="/Franklyn_Oliha_Data_Scientist_Machine_Learning_Engineer_upd_CV.pdf"
-            download
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-              />
-            </svg>
-            Download CV (PDF)
-          </a>
-        </div>
       </div>
 
-      <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6 text-slate-900">
-          Professional Summary
-        </h2>
-        <div className="bg-gradient-to-br from-white to-blue-50 p-8 rounded-2xl shadow-lg border border-blue-100">
-          <div className="grid md:grid-cols-2 gap-8 mb-6">
-            <div>
-              <h3 className="font-bold text-lg mb-3 text-blue-600">
-                🎓 Academic Excellence
-              </h3>
-              <ul className="space-y-2 text-slate-700">
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>
-                    <strong>First-Class BEng (Hons)</strong> Software
-                    Engineering
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>
-                    <strong>MSc (Distinction)</strong> Data Science
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Top UK Universities</span>
-                </li>
-              </ul>
+      <section className="mb-16">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl font-bold mb-3 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            Selected Projects
+          </h2>
+          <p className="text-lg text-slate-600">
+            Representative real-world systems across AI, data science, and
+            software engineering
+          </p>
+        </div>
+        <div className="space-y-8">
+          {/* Human Trafficking Coercion Detection System */}
+          <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-blue-600 hover:shadow-xl transition-shadow">
+            <h3 className="text-2xl font-bold text-slate-900 mb-2">
+              🔍 Human Trafficking Coercion Detection System
+            </h3>
+            <p className="text-blue-600 font-semibold mb-4">
+              Applied Research · NLP & Machine Learning
+            </p>
+            <p className="text-slate-700 mb-4 leading-relaxed">
+              Developed an advanced natural language processing system using
+              fine-tuned BERT models to identify multiple coercion indicators
+              within unstructured trafficking reports. The system supports
+              multi-label classification of psychological, physical, financial,
+              and movement-restriction coercion patterns and was designed for
+              analyst use in real-world NGO environments.
+            </p>
+            <div className="mb-4">
+              <h4 className="font-bold text-slate-900 mb-2">Tech Stack:</h4>
+              <div className="flex flex-wrap gap-2">
+                {["Python", "PyTorch", "BERT", "NLP", "Transformers"].map(
+                  (tech, i) => (
+                    <span
+                      key={i}
+                      className="bg-blue-50 text-blue-700 px-3 py-1 rounded-lg text-sm font-semibold border border-blue-200"
+                    >
+                      {tech}
+                    </span>
+                  )
+                )}
+              </div>
             </div>
+            <div className="mb-4">
+              <h4 className="font-bold text-slate-900 mb-2">Impact:</h4>
+              <p className="text-slate-700">
+                📊 Improved consistency in coercion analysis and reduced manual
+                review effort for analysts working with large volumes of
+                narrative reports.
+              </p>
+            </div>
+
+            {/* Case Study Section */}
+            <details className="mb-4">
+              <summary className="cursor-pointer text-blue-600 hover:text-blue-800 font-semibold mb-2">
+                📄 Case Study (Click to expand)
+              </summary>
+              <div className="mt-4 p-6 bg-blue-50 rounded-lg border border-blue-200">
+                <div className="space-y-4">
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">Problem</h5>
+                    <p className="text-slate-700 leading-relaxed">
+                      Human trafficking reports are largely unstructured and
+                      contain subtle indicators of coercion that are difficult
+                      to detect consistently through manual review. Analysts
+                      face scale limitations, subjectivity, and time pressure
+                      when reviewing large volumes of narrative text.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">Solution</h5>
+                    <p className="text-slate-700 leading-relaxed">
+                      I designed and implemented an NLP-based machine learning
+                      system using a fine-tuned BERT model to automatically
+                      detect multiple coercion indicators within textual
+                      reports. The system supports multi-label classification,
+                      reflecting the real-world complexity where multiple forms
+                      of coercion can coexist.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">
+                      Technical Approach
+                    </h5>
+                    <ul className="list-disc list-inside text-slate-700 space-y-1">
+                      <li>Text preprocessing and tokenisation pipeline</li>
+                      <li>
+                        Fine-tuned BERT model for contextual understanding
+                      </li>
+                      <li>Multi-label classification output layer</li>
+                      <li>
+                        Analyst-friendly interface for inference and testing
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">
+                      Key Decisions
+                    </h5>
+                    <ul className="list-disc list-inside text-slate-700 space-y-1">
+                      <li>
+                        Selected BERT to capture semantic context beyond keyword
+                        matching
+                      </li>
+                      <li>
+                        Designed outputs to support overlapping coercion
+                        categories
+                      </li>
+                      <li>
+                        Followed CRISP-DM methodology to structure the ML
+                        lifecycle
+                      </li>
+                      <li>
+                        Prioritised ethical and responsible AI considerations
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">Outcome</h5>
+                    <ul className="list-disc list-inside text-slate-700 space-y-1">
+                      <li>
+                        Improved consistency and speed of coercion analysis
+                      </li>
+                      <li>Reduced analyst workload</li>
+                      <li>
+                        Demonstrated applied NLP in a sensitive, real-world
+                        domain
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">
+                      Technologies
+                    </h5>
+                    <p className="text-slate-700">
+                      Python · PyTorch · BERT · NLP · Transformers
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+
+          {/* UK House Price Prediction Platform */}
+          <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-purple-600 hover:shadow-xl transition-shadow">
+            <h3 className="text-2xl font-bold text-slate-900 mb-2">
+              🏠 UK House Price Prediction Platform
+            </h3>
+            <p className="text-purple-600 font-semibold mb-4">
+              Production · Data Science
+            </p>
+            <p className="text-slate-700 mb-4 leading-relaxed">
+              Built an end-to-end machine learning platform for predicting UK
+              property prices using large-scale historical transaction data. The
+              system applies feature engineering and ensemble modelling
+              techniques to generate reliable valuations and market insights
+              through an interactive web interface.
+            </p>
+            <div className="mb-4">
+              <h4 className="font-bold text-slate-900 mb-2">Tech Stack:</h4>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  "Python",
+                  "Streamlit",
+                  "Scikit-learn",
+                  "XGBoost",
+                  "Pandas",
+                ].map((tech, i) => (
+                  <span
+                    key={i}
+                    className="bg-purple-50 text-purple-700 px-3 py-1 rounded-lg text-sm font-semibold border border-purple-200"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="mb-4">
+              <h4 className="font-bold text-slate-900 mb-2">Impact:</h4>
+              <p className="text-slate-700">
+                📊 Data-driven property valuation and market insight generation
+                using real UK housing data.
+              </p>
+            </div>
+
+            {/* Case Study Section */}
+            <details className="mb-4">
+              <summary className="cursor-pointer text-purple-600 hover:text-purple-800 font-semibold mb-2">
+                📄 Case Study (Click to expand)
+              </summary>
+              <div className="mt-4 p-6 bg-purple-50 rounded-lg border border-purple-200">
+                <div className="space-y-4">
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">Problem</h5>
+                    <p className="text-slate-700 leading-relaxed">
+                      Property valuation is influenced by multiple interacting
+                      factors, making accurate price prediction difficult using
+                      simple heuristics. Buyers, sellers, and analysts require
+                      data-driven insights derived from large-scale historical
+                      data.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">Solution</h5>
+                    <p className="text-slate-700 leading-relaxed">
+                      I built an end-to-end machine learning platform that
+                      predicts UK house prices using real transaction data. The
+                      system combines feature engineering, ensemble modelling,
+                      and an interactive interface to deliver practical
+                      valuation insights.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">
+                      Technical Approach
+                    </h5>
+                    <ul className="list-disc list-inside text-slate-700 space-y-1">
+                      <li>
+                        Data ingestion and preprocessing of large housing
+                        datasets
+                      </li>
+                      <li>
+                        Feature engineering incorporating regional and property
+                        attributes
+                      </li>
+                      <li>Model benchmarking and ensemble techniques</li>
+                      <li>
+                        Interactive deployment using a lightweight web interface
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">
+                      Key Decisions
+                    </h5>
+                    <ul className="list-disc list-inside text-slate-700 space-y-1">
+                      <li>Used ensemble models to balance bias and variance</li>
+                      <li>Focused on interpretability alongside accuracy</li>
+                      <li>
+                        Designed the platform for usability by non-technical
+                        users
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">Outcome</h5>
+                    <ul className="list-disc list-inside text-slate-700 space-y-1">
+                      <li>
+                        Reliable property price estimates using real UK data
+                      </li>
+                      <li>
+                        Demonstrated full ML lifecycle from data to deployment
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">
+                      Technologies
+                    </h5>
+                    <p className="text-slate-700">
+                      Python · Streamlit · Scikit-learn · XGBoost · Pandas
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </details>
+
             <div>
-              <h3 className="font-bold text-lg mb-3 text-green-600">
-                💼 Professional Status
-              </h3>
-              <ul className="space-y-2 text-slate-700">
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>
-                    <strong>SC Cleared</strong> - UK Government
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>
-                    <strong>4+ Years</strong> industry experience
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>
-                    Based in <strong>Manchester, UK</strong>
-                  </span>
-                </li>
-              </ul>
+              <a
+                href="https://github.com/Franklyn-SWE/UK_HOUSE_PRICE_PREDICTION_V2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-purple-600 hover:text-purple-800 font-semibold"
+              >
+                💻 GitHub
+              </a>
             </div>
           </div>
-          <div className="border-t pt-6">
-            <p className="text-lg text-slate-700 leading-relaxed">
-              Seeking challenging roles in{" "}
-              <strong>Machine Learning Engineering</strong>,{" "}
-              <strong>Software Development</strong>, or{" "}
-              <strong>Data Science</strong> where I can leverage my SC clearance
-              and technical expertise to deliver high-impact solutions for
-              enterprise and government clients.
+
+          {/* Real-Time Attendance Management System */}
+          <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-green-600 hover:shadow-xl transition-shadow">
+            <h3 className="text-2xl font-bold text-slate-900 mb-2">
+              🧾 Real-Time Attendance Management System
+            </h3>
+            <p className="text-green-600 font-semibold mb-4">
+              Production · Real-Time Systems
             </p>
+            <p className="text-slate-700 mb-4 leading-relaxed">
+              Designed and deployed a real-time web application for managing
+              live event attendance across multiple devices. The system enables
+              concurrent user input, instant data synchronization, role-based
+              access control, and session finalization to ensure data integrity
+              during live operations.
+            </p>
+            <div className="mb-4">
+              <h4 className="font-bold text-slate-900 mb-2">Tech Stack:</h4>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  "JavaScript",
+                  "Firebase",
+                  "Firestore",
+                  "Auth",
+                  "HTML",
+                  "CSS",
+                  "Bootstrap",
+                ].map((tech, i) => (
+                  <span
+                    key={i}
+                    className="bg-green-50 text-green-700 px-3 py-1 rounded-lg text-sm font-semibold border border-green-200"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="mb-4">
+              <h4 className="font-bold text-slate-900 mb-2">Impact:</h4>
+              <p className="text-slate-700">
+                📊 Replaced manual counting processes with a reliable, scalable
+                real-time system used in live environments.
+              </p>
+            </div>
+
+            {/* Case Study Section */}
+            <details className="mb-4">
+              <summary className="cursor-pointer text-green-600 hover:text-green-800 font-semibold mb-2">
+                📄 Case Study (Click to expand)
+              </summary>
+              <div className="mt-4 p-6 bg-green-50 rounded-lg border border-green-200">
+                <div className="space-y-4">
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">Problem</h5>
+                    <p className="text-slate-700 leading-relaxed">
+                      Manual attendance counting during live events is
+                      error-prone, slow, and difficult to reconcile when
+                      multiple entry points and staff are involved. Existing
+                      solutions lacked real-time synchronization and role-based
+                      controls.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">Solution</h5>
+                    <p className="text-slate-700 leading-relaxed">
+                      I designed and deployed a real-time web application that
+                      allows multiple users to submit attendance counts
+                      concurrently, with instant synchronization and
+                      administrative controls to lock sessions and preserve data
+                      integrity.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">
+                      Technical Approach
+                    </h5>
+                    <ul className="list-disc list-inside text-slate-700 space-y-1">
+                      <li>
+                        Client-side web interface for users and administrators
+                      </li>
+                      <li>
+                        Real-time data synchronization using Firestore listeners
+                      </li>
+                      <li>Role-based authentication and access control</li>
+                      <li>Cloud deployment for scalability and reliability</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">
+                      Key Decisions
+                    </h5>
+                    <ul className="list-disc list-inside text-slate-700 space-y-1">
+                      <li>
+                        Used real-time listeners to eliminate refresh-based
+                        workflows
+                      </li>
+                      <li>
+                        Implemented session finalization to prevent post-event
+                        edits
+                      </li>
+                      <li>Designed safeguards against invalid data states</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">Outcome</h5>
+                    <ul className="list-disc list-inside text-slate-700 space-y-1">
+                      <li>
+                        Replaced manual processes with a reliable real-time
+                        system
+                      </li>
+                      <li>Actively used in live operational environments</li>
+                      <li>Improved accuracy and reduced reconciliation time</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">
+                      Technologies
+                    </h5>
+                    <p className="text-slate-700">
+                      JavaScript · Firebase (Firestore, Auth, Hosting) · HTML ·
+                      CSS · Bootstrap
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+
+          {/* Enterprise Automation Platform */}
+          <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-indigo-600 hover:shadow-xl transition-shadow">
+            <h3 className="text-2xl font-bold text-slate-900 mb-2">
+              ⚡ Enterprise Automation Platform
+            </h3>
+            <p className="text-indigo-600 font-semibold mb-4">
+              Enterprise · Automation & Systems
+            </p>
+            <p className="text-slate-700 mb-4 leading-relaxed">
+              Architected and deployed a backend automation platform to
+              streamline complex business workflows for a large enterprise
+              client. The solution reduced manual processing through system
+              integration, background task orchestration, and secure data
+              handling.
+            </p>
+            <div className="mb-4">
+              <h4 className="font-bold text-slate-900 mb-2">Tech Stack:</h4>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  "Python",
+                  "Django",
+                  "Azure",
+                  "Docker",
+                  "PostgreSQL",
+                  "n8n",
+                ].map((tech, i) => (
+                  <span
+                    key={i}
+                    className="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-lg text-sm font-semibold border border-indigo-200"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="mb-4">
+              <h4 className="font-bold text-slate-900 mb-2">Impact:</h4>
+              <p className="text-slate-700">
+                📊 Significant reduction in manual processing time and
+                operational overhead.
+              </p>
+            </div>
+
+            {/* Case Study Section */}
+            <details className="mb-4">
+              <summary className="cursor-pointer text-indigo-600 hover:text-indigo-800 font-semibold mb-2">
+                📄 Case Study (Click to expand)
+              </summary>
+              <div className="mt-4 p-6 bg-indigo-50 rounded-lg border border-indigo-200">
+                <div className="space-y-4">
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">Problem</h5>
+                    <p className="text-slate-700 leading-relaxed">
+                      Manual, repetitive business workflows were consuming
+                      significant operational time and introducing
+                      inconsistencies across systems within a large enterprise
+                      environment. Processes relied heavily on human
+                      intervention, leading to delays, errors, and limited
+                      scalability.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">Solution</h5>
+                    <p className="text-slate-700 leading-relaxed">
+                      I architected and deployed an automation platform to
+                      orchestrate workflows, integrate multiple systems, and
+                      reduce manual intervention. The solution combined backend
+                      services with low-code workflow automation to enable
+                      reliable, auditable, and scalable process execution.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">
+                      Technical Approach
+                    </h5>
+                    <ul className="list-disc list-inside text-slate-700 space-y-1">
+                      <li>
+                        Backend services developed using Django for business
+                        logic and integrations
+                      </li>
+                      <li>
+                        Workflow orchestration implemented using n8n for
+                        event-driven automation
+                      </li>
+                      <li>
+                        Secure database integration for state and execution
+                        tracking
+                      </li>
+                      <li>
+                        Containerised deployment for portability and scalability
+                      </li>
+                      <li>
+                        Cloud hosting on Azure for reliability and operational
+                        control
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">
+                      Key Decisions
+                    </h5>
+                    <ul className="list-disc list-inside text-slate-700 space-y-1">
+                      <li>
+                        Chose n8n to enable rapid workflow creation, visibility,
+                        and maintainability
+                      </li>
+                      <li>
+                        Separated orchestration logic (n8n) from core
+                        application logic (Django)
+                      </li>
+                      <li>
+                        Containerised services to simplify deployment and
+                        environment consistency
+                      </li>
+                      <li>
+                        Designed workflows with failure handling and retry
+                        mechanisms
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">Outcome</h5>
+                    <ul className="list-disc list-inside text-slate-700 space-y-1">
+                      <li>Significant reduction in manual processing effort</li>
+                      <li>
+                        Improved consistency and reliability of automated
+                        workflows
+                      </li>
+                      <li>Faster turnaround times for operational processes</li>
+                      <li>
+                        Scalable automation foundation for future integrations
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">
+                      Technologies
+                    </h5>
+                    <p className="text-slate-700">
+                      Python · Django · n8n · Azure · Docker · PostgreSQL
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Data Science Work Section */}
+      <section className="mb-12">
+        <div className="mb-8">
+          <h3 className="text-2xl font-semibold mb-2 text-slate-800">
+            Additional Data Science Work
+          </h3>
+          <div className="h-1 w-20 bg-gradient-to-r from-orange-500 to-orange-300 rounded"></div>
+        </div>
+
+        <div className="space-y-4">
+          {/* Customer Segmentation Using Clustering */}
+          <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 hover:border-orange-300 transition-all">
+            <h4 className="text-lg font-bold text-slate-900 mb-2">
+              📊 Customer Segmentation Using Clustering
+            </h4>
+            <p className="text-orange-600 font-semibold text-sm mb-3">
+              Data Science · Unsupervised Learning
+            </p>
+            <p className="text-slate-700 text-sm mb-3 leading-relaxed">
+              Built a customer segmentation system using unsupervised learning
+              techniques to group customers based on behavioural and demographic
+              attributes. The analysis supports targeted engagement strategies
+              and data-driven business decisions.
+            </p>
+            <div className="mb-3">
+              <div className="flex flex-wrap gap-2">
+                {["Python", "Pandas", "Scikit-learn", "Jupyter Notebook"].map(
+                  (tech, i) => (
+                    <span
+                      key={i}
+                      className="bg-white text-orange-700 px-2 py-1 rounded text-xs font-semibold border border-orange-200"
+                    >
+                      {tech}
+                    </span>
+                  )
+                )}
+              </div>
+            </div>
+            <div>
+              <a
+                href="https://github.com/Franklyn-SWE/Customer_Segmentation_Clustering"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-orange-600 hover:text-orange-800 font-semibold text-sm"
+              >
+                💻 View on GitHub →
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -245,264 +778,10 @@ export default function Recruiters() {
         </div>
       </section>
 
-      <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6 text-slate-900">
-          Notable Projects & Achievements
-        </h2>
-        <div className="space-y-6">
-          <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-2xl shadow-lg border border-purple-200">
-            <div className="flex items-start justify-between mb-3">
-              <h3 className="font-bold text-xl text-slate-900">
-                🔍 Human Trafficking Coercion Detection
-              </h3>
-              <span className="bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold">
-                Research
-              </span>
-            </div>
-            <p className="text-slate-700 mb-3 leading-relaxed">
-              Developed advanced NLP system using BERT transformers to detect
-              coercion indicators in text, achieving 95% accuracy. Collaborated
-              with NGOs on real-world application.
-            </p>
-            <div className="flex flex-wrap gap-2 mb-2">
-              {["Python", "PyTorch", "BERT", "NLP", "Transformers"].map(
-                (tech, i) => (
-                  <span
-                    key={i}
-                    className="bg-white text-purple-700 px-3 py-1 rounded-lg text-xs font-semibold"
-                  >
-                    {tech}
-                  </span>
-                )
-              )}
-            </div>
-            <p className="text-sm text-purple-700 font-semibold mt-2">
-              📊 Impact: 95% accuracy, potential to assist law enforcement
-            </p>
-          </div>
-          <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-2xl shadow-lg border border-blue-200">
-            <div className="flex items-start justify-between mb-3">
-              <h3 className="font-bold text-xl text-slate-900">
-                🏠 UK House Price Prediction Platform
-              </h3>
-              <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
-                Production
-              </span>
-            </div>
-            <p className="text-slate-700 mb-3 leading-relaxed">
-              Full-stack ML application with 1000+ monthly active users.
-              Ensemble models trained on 500K+ transactions provide accurate
-              property valuations and market insights.
-            </p>
-            <div className="flex flex-wrap gap-2 mb-2">
-              {["Python", "Streamlit", "Scikit-learn", "XGBoost", "Pandas"].map(
-                (tech, i) => (
-                  <span
-                    key={i}
-                    className="bg-white text-blue-700 px-3 py-1 rounded-lg text-xs font-semibold"
-                  >
-                    {tech}
-                  </span>
-                )
-              )}
-            </div>
-            <p className="text-sm text-blue-700 font-semibold mt-2">
-              📊 Impact: £15K avg. accuracy, 1000+ users/month
-            </p>
-          </div>
-          <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-2xl shadow-lg border border-green-200">
-            <div className="flex items-start justify-between mb-3">
-              <h3 className="font-bold text-xl text-slate-900">
-                ⚡ Enterprise Automation Platform
-              </h3>
-              <span className="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold">
-                Enterprise
-              </span>
-            </div>
-            <p className="text-slate-700 mb-3 leading-relaxed">
-              Architected and deployed automation solution for Fortune 500
-              client, achieving 70% reduction in manual processing time and
-              £200K annual cost savings.
-            </p>
-            <div className="flex flex-wrap gap-2 mb-2">
-              {[
-                "Python",
-                "Django",
-                "Azure",
-                "Docker",
-                "PostgreSQL",
-                "Redis",
-              ].map((tech, i) => (
-                <span
-                  key={i}
-                  className="bg-white text-green-700 px-3 py-1 rounded-lg text-xs font-semibold"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-            <p className="text-sm text-green-700 font-semibold mt-2">
-              📊 Impact: 70% efficiency gain, £200K/year savings
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6 text-slate-900">
-          Professional Experience
-        </h2>
-        <div className="space-y-6">
-          <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-blue-600">
-            <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-1">
-                  Senior Machine Learning Engineer
-                </h3>
-                <p className="text-blue-600 font-semibold">
-                  Enterprise Tech Solutions Ltd
-                </p>
-              </div>
-              <span className="text-slate-500 font-medium mt-2 md:mt-0">
-                2022 - Present
-              </span>
-            </div>
-            <ul className="space-y-2 text-slate-700">
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">▸</span>
-                <span>
-                  Led development of NLP systems processing 10M+ documents
-                  monthly with 95% accuracy
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">▸</span>
-                <span>
-                  Architected ML pipelines on Azure reducing inference time by
-                  60%
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">▸</span>
-                <span>
-                  Mentored team of 3 junior engineers in ML best practices and
-                  model deployment
-                </span>
-              </li>
-            </ul>
-          </div>
-
-          <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-purple-600">
-            <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-1">
-                  Software Engineer
-                </h3>
-                <p className="text-purple-600 font-semibold">
-                  Digital Innovation Group
-                </p>
-              </div>
-              <span className="text-slate-500 font-medium mt-2 md:mt-0">
-                2020 - 2022
-              </span>
-            </div>
-            <ul className="space-y-2 text-slate-700">
-              <li className="flex items-start">
-                <span className="text-purple-600 mr-2">▸</span>
-                <span>
-                  Built full-stack web applications serving 50K+ users using
-                  Django and React
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-purple-600 mr-2">▸</span>
-                <span>
-                  Implemented CI/CD pipelines reducing deployment time by 75%
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-purple-600 mr-2">▸</span>
-                <span>
-                  Collaborated with cross-functional teams in Agile environment
-                </span>
-              </li>
-            </ul>
-          </div>
-
-          <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-green-600">
-            <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-1">
-                  Junior Data Scientist
-                </h3>
-                <p className="text-green-600 font-semibold">
-                  Analytics & Insights Co
-                </p>
-              </div>
-              <span className="text-slate-500 font-medium mt-2 md:mt-0">
-                2019 - 2020
-              </span>
-            </div>
-            <ul className="space-y-2 text-slate-700">
-              <li className="flex items-start">
-                <span className="text-green-600 mr-2">▸</span>
-                <span>
-                  Developed predictive models achieving 85%+ accuracy on key
-                  business metrics
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-green-600 mr-2">▸</span>
-                <span>
-                  Created interactive dashboards in Python/Streamlit for
-                  stakeholder reporting
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-green-600 mr-2">▸</span>
-                <span>
-                  Performed statistical analysis on datasets with 1M+ records
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6 text-slate-900">
-          Key Strengths
-        </h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow">
-            <div className="text-4xl mb-3">🚀</div>
-            <h3 className="font-bold text-lg mb-2">Fast Learner</h3>
-            <p className="text-slate-600">
-              Quick to adapt to new technologies and frameworks
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow">
-            <div className="text-4xl mb-3">👥</div>
-            <h3 className="font-bold text-lg mb-2">Team Player</h3>
-            <p className="text-slate-600">
-              Excellent collaboration and communication skills
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow">
-            <div className="text-4xl mb-3">🎯</div>
-            <h3 className="font-bold text-lg mb-2">Results-Driven</h3>
-            <p className="text-slate-600">
-              Focus on delivering measurable business impact
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="bg-gradient-to-r from-blue-600 to-purple-600 p-8 rounded-2xl shadow-2xl text-white">
-        <h2 className="text-3xl font-bold mb-4">Download My CV</h2>
         <p className="mb-6 text-lg">
-          Comprehensive resume with full project details, employment history,
-          and references available upon request.
+          Comprehensive CV covering key projects, technical expertise, and
+          references available upon request.
         </p>
         <div className="flex flex-wrap gap-4">
           <a
