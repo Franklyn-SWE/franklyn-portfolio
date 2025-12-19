@@ -106,8 +106,8 @@ export default function About() {
             </a>{" "}
             of this portfolio.
           </p>
-          <div className="mt-6 p-4 bg-gradient-to-r from-slate-50 to-blue-50 rounded-lg border-l-4 border-blue-400">
-            <p className="text-base text-slate-700 leading-relaxed">
+          <div className="mt-6 p-4 md:p-6 bg-gradient-to-r from-slate-50 to-blue-50 rounded-lg border-l-4 border-blue-400">
+            <p className="text-sm md:text-base text-slate-700 leading-relaxed">
               For early-career academic software engineering projects
               (2019–2022), access the archived portfolio of foundational
               full-stack work:
@@ -116,7 +116,7 @@ export default function About() {
                 href="https://franklyn-swe.github.io/portfolio/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 font-semibold underline"
+                className="text-blue-600 hover:text-blue-800 font-semibold underline break-all"
               >
                 https://franklyn-swe.github.io/portfolio/
               </a>
