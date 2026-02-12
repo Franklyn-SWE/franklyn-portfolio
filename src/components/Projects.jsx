@@ -6,7 +6,7 @@ export default function Projects() {
       title: "🤖 LeadMate AI – Multi-Tenant Sales Automation Platform",
       category: "Production · Full-Stack Software Engineering",
       description:
-        "Designed and engineered a production-ready, multi-tenant SaaS platform enabling SMEs to capture, qualify, and engage leads using AI-powered automation and structured lead scoring. Built as a complete end-to-end system covering backend APIs, database design, frontend dashboard, authentication, and deployment configuration. Tech Stack: Python · FastAPI · PostgreSQL · SQLAlchemy · React · TypeScript · TailwindCSS · JWT · Docker · OpenAI API · Twilio",
+        "Designed and engineered a production-ready, multi-tenant SaaS platform enabling SMEs to capture, qualify, and engage leads using AI-powered automation and structured lead scoring. Built as a complete end-to-end system covering backend APIs, database design, frontend dashboard, authentication, and deployment configuration.",
       gradient: "from-orange-500 to-red-500",
       details: {
         problem:
