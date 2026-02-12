@@ -3,6 +3,34 @@ import { Link } from "react-router-dom";
 export default function Projects() {
   const projects = [
     {
+      title: "🤖 LeadMate AI – Multi-Tenant Sales Automation Platform",
+      category: "Production · Full-Stack Software Engineering",
+      description:
+        "Designed and engineered a production-ready, multi-tenant SaaS platform enabling SMEs to capture, qualify, and engage leads using AI-powered automation and structured lead scoring. Built as a complete end-to-end system covering backend APIs, database design, frontend dashboard, authentication, and deployment configuration. Tech Stack: Python · FastAPI · PostgreSQL · SQLAlchemy · React · TypeScript · TailwindCSS · JWT · Docker · OpenAI API · Twilio",
+      gradient: "from-orange-500 to-red-500",
+      details: {
+        problem:
+          "SMEs often lose revenue due to inconsistent follow-ups, fragmented communication channels, and lack of structured lead qualification. Existing CRM tools were either too complex, expensive, or not optimized for automation-driven workflows. Additionally, building a scalable SaaS platform requires secure multi-tenant isolation, role-based access control, and subscription enforcement — features often overlooked in small-scale systems.",
+        solution:
+          "I architected and implemented a modular, multi-tenant SaaS platform that centralizes lead capture, messaging, scoring, and analytics within a secure, scalable architecture. The system enables organizations to manage leads across email and messaging channels while enforcing organization-level data isolation and role-based permissions.",
+        approach: [
+          "Designed layered FastAPI backend (API → Services → Models → Utilities)",
+          "Implemented multi-tenant PostgreSQL schema with organization isolation",
+          "Built JWT-based authentication with RBAC (admin/member/viewer)",
+          "Developed React + TypeScript dashboard with dynamic lead management",
+          "Integrated OpenAI for contextual message generation",
+          "Integrated Twilio and SMTP for multi-channel communication",
+          "Enforced subscription limits at API level",
+          "Provided Docker-ready deployment and production configuration",
+        ],
+        impact: [
+          "📊 Delivered a scalable multi-tenant SaaS architecture with secure authentication and subscription enforcement.",
+          "⚡ Automated AI-powered lead engagement across email and messaging channels.",
+          "🚀 Demonstrated full-stack engineering capability from database modelling to deployment-ready infrastructure.",
+        ],
+      },
+    },
+    {
       title: "🔍 Human Trafficking Coercion Detection",
       category: "Applied Research · NLP",
       description:

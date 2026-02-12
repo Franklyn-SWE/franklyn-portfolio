@@ -22,6 +22,173 @@ export default function Recruiters() {
           </p>
         </div>
         <div className="space-y-8">
+          {/* LeadMate AI - Multi-Tenant Sales Automation Platform */}
+          <div className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border-l-4 border-orange-600 hover:shadow-xl transition-shadow">
+            <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-2">
+              🤖 LeadMate AI – Multi-Tenant Sales Automation Platform
+            </h3>
+            <p className="text-orange-600 font-semibold mb-4">
+              Production · Full-Stack Software Engineering
+            </p>
+            <p className="text-slate-700 mb-4 leading-relaxed">
+              Designed and engineered a production-ready, multi-tenant SaaS
+              platform enabling SMEs to capture, qualify, and engage leads using
+              AI-powered automation and structured lead scoring. Built as a
+              complete end-to-end system covering backend APIs, database design,
+              frontend dashboard, authentication, and deployment configuration.
+            </p>
+            <div className="mb-4">
+              <h4 className="font-bold text-slate-900 mb-2">Tech Stack:</h4>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  "Python",
+                  "FastAPI",
+                  "PostgreSQL",
+                  "SQLAlchemy",
+                  "React",
+                  "TypeScript",
+                  "TailwindCSS",
+                  "JWT",
+                  "Docker",
+                  "OpenAI API",
+                  "Twilio",
+                ].map((tech, i) => (
+                  <span
+                    key={i}
+                    className="bg-orange-50 text-orange-700 px-3 py-1 rounded-lg text-sm font-semibold border border-orange-200"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="mb-4">
+              <h4 className="font-bold text-slate-900 mb-2">Impact:</h4>
+              <div className="text-slate-700 space-y-1">
+                <p>
+                  📊 Delivered a scalable multi-tenant SaaS architecture with
+                  secure authentication and subscription enforcement.
+                </p>
+                <p>
+                  ⚡ Automated AI-powered lead engagement across email and
+                  messaging channels.
+                </p>
+                <p>
+                  🚀 Demonstrated full-stack engineering capability from
+                  database modelling to deployment-ready infrastructure.
+                </p>
+              </div>
+            </div>
+
+            {/* Case Study Section */}
+            <details className="mb-4">
+              <summary className="cursor-pointer text-orange-600 hover:text-orange-800 font-semibold mb-2">
+                📄 Case Study (Click to expand)
+              </summary>
+              <div className="mt-4 p-6 bg-orange-50 rounded-lg border border-orange-200">
+                <div className="space-y-4">
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">Problem</h5>
+                    <p className="text-slate-700 leading-relaxed">
+                      SMEs often lose revenue due to inconsistent follow-ups,
+                      fragmented communication channels, and lack of structured
+                      lead qualification. Existing CRM tools were either too
+                      complex, expensive, or not optimized for automation-driven
+                      workflows.
+                    </p>
+                    <p className="text-slate-700 leading-relaxed mt-2">
+                      Additionally, building a scalable SaaS platform requires
+                      secure multi-tenant isolation, role-based access control,
+                      and subscription enforcement — features often overlooked
+                      in small-scale systems.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">Solution</h5>
+                    <p className="text-slate-700 leading-relaxed">
+                      I architected and implemented a modular, multi-tenant SaaS
+                      platform that centralizes lead capture, messaging,
+                      scoring, and analytics within a secure, scalable
+                      architecture.
+                    </p>
+                    <p className="text-slate-700 leading-relaxed mt-2">
+                      The system enables organizations to manage leads across
+                      email and messaging channels while enforcing
+                      organization-level data isolation and role-based
+                      permissions.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">
+                      Technical Approach
+                    </h5>
+                    <ul className="list-disc list-inside text-slate-700 space-y-1">
+                      <li>
+                        Designed layered FastAPI backend (API → Services →
+                        Models → Utilities)
+                      </li>
+                      <li>
+                        Implemented multi-tenant PostgreSQL schema with
+                        organization isolation
+                      </li>
+                      <li>
+                        Built JWT-based authentication with RBAC
+                        (admin/member/viewer)
+                      </li>
+                      <li>
+                        Developed React + TypeScript dashboard with dynamic lead
+                        management
+                      </li>
+                      <li>
+                        Integrated OpenAI for contextual message generation
+                      </li>
+                      <li>
+                        Integrated Twilio and SMTP for multi-channel
+                        communication
+                      </li>
+                      <li>Enforced subscription limits at API level</li>
+                      <li>
+                        Provided Docker-ready deployment and production
+                        configuration
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">Outcome</h5>
+                    <ul className="list-disc list-inside text-slate-700 space-y-1">
+                      <li>
+                        Delivered a scalable multi-tenant SaaS architecture with
+                        secure authentication and subscription enforcement
+                      </li>
+                      <li>
+                        Automated AI-powered lead engagement across email and
+                        messaging channels
+                      </li>
+                      <li>
+                        Demonstrated full-stack engineering capability from
+                        database modelling to deployment-ready infrastructure
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 mb-2">
+                      Technologies
+                    </h5>
+                    <p className="text-slate-700">
+                      Python · FastAPI · PostgreSQL · SQLAlchemy · React ·
+                      TypeScript · TailwindCSS · JWT · Docker · OpenAI API ·
+                      Twilio
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+
           {/* Human Trafficking Coercion Detection System */}
           <div className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border-l-4 border-blue-600 hover:shadow-xl transition-shadow">
             <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-2">
@@ -49,7 +216,7 @@ export default function Recruiters() {
                     >
                       {tech}
                     </span>
-                  )
+                  ),
                 )}
               </div>
             </div>
@@ -619,7 +786,7 @@ export default function Recruiters() {
                     >
                       {tech}
                     </span>
-                  )
+                  ),
                 )}
               </div>
             </div>
@@ -646,7 +813,7 @@ export default function Recruiters() {
                   >
                     {lang}
                   </span>
-                )
+                ),
               )}
             </div>
           </div>
@@ -761,7 +928,7 @@ export default function Recruiters() {
                   >
                     {method}
                   </span>
-                )
+                ),
               )}
             </div>
           </div>
