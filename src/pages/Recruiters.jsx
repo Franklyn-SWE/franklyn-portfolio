@@ -942,7 +942,7 @@ export default function Recruiters() {
         </p>
         <div className="flex flex-wrap gap-4">
           <a
-            href="/Franklyn_Oliha_Data_Scientist_Machine_Learning_Engineer_upd_CV.pdf"
+            href="/Franklyn_Oliha_Public_CV.pdf"
             download
             className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl hover:scale-105 flex items-center gap-2"
           >

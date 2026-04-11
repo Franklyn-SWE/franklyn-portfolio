@@ -4,11 +4,11 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-xs md:text-sm text-slate-300">
-            © 2025 Franklyn Oliha. All rights reserved.
+            &copy; 2026 Franklyn Oliha. All rights reserved.
           </div>
           <div className="flex gap-4 md:gap-6 text-sm md:text-base">
             <a
-              href="https://github.com"
+              href="https://github.com/Franklyn-SWE"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-blue-300 transition-colors font-medium"
@@ -16,7 +16,7 @@ export default function Footer() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/franklyn-oliha"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-blue-300 transition-colors font-medium"

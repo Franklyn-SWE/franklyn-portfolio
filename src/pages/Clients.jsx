@@ -147,7 +147,7 @@ export default function Clients() {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1">
-                    SC Cleared & Trusted
+                    🔒 Secure Environment Experience
                   </h3>
                   <p className="text-slate-600">
                     Security cleared for sensitive government and enterprise

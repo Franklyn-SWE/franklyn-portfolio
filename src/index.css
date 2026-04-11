@@ -17,6 +17,15 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Hide scrollbar for horizontal nav on mobile */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;

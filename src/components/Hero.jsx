@@ -9,34 +9,37 @@ export default function Hero() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent leading-tight">
                 Franklyn Oliha
               </h1>
-              <p className="text-lg md:text-xl lg:text-2xl text-slate-700 font-semibold">
-                Software Engineer · ML Engineer · Data Scientist
+              <p className="text-base md:text-lg lg:text-xl text-slate-700 font-semibold md:whitespace-nowrap">
+                Machine Learning Engineer · AI Systems Builder · Software
+                Engineer
               </p>
               <p className="text-sm md:text-base text-slate-500 italic">
-                Machine Learning Engineer (UK Civil Service) | Founder,
+                Machine Learning Engineer (UK Public Sector) | Founder,
                 MudiaTech
               </p>
             </div>
 
-            <div className="flex gap-2 text-xs md:text-sm flex-wrap md:flex-nowrap">
-              <span className="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-3 md:px-4 py-2 rounded-full font-bold shadow-md whitespace-nowrap">
-                🛡️ SC Cleared
+            <div className="flex flex-wrap gap-2 text-xs md:text-sm">
+              <span className="bg-slate-100 text-slate-700 px-3 md:px-4 py-2 rounded-full font-semibold border border-slate-200">
+                🔒 Secure Environment Experience
               </span>
-              <span className="bg-slate-100 text-slate-700 px-3 md:px-4 py-2 rounded-full font-semibold whitespace-nowrap border border-slate-200">
+              <span className="bg-slate-100 text-slate-700 px-3 md:px-4 py-2 rounded-full font-semibold border border-slate-200">
                 📍 Manchester, UK
               </span>
-
-              <span className="bg-slate-100 text-slate-700 px-3 md:px-4 py-2 rounded-full font-semibold whitespace-nowrap border border-slate-200">
-                🎓 MSc Distinction
+              <span className="bg-slate-100 text-slate-700 px-3 md:px-4 py-2 rounded-full font-semibold border border-slate-200">
+                🎓 MSc (Distinction)
+              </span>
+              <span className="bg-slate-100 text-slate-700 px-3 md:px-4 py-2 rounded-full font-semibold border border-slate-200">
+                🏛️ UK Public Sector
               </span>
             </div>
 
             <p className="text-base md:text-lg text-slate-600 leading-relaxed max-w-2xl">
-              I design and deploy production-ready machine learning and software
-              systems used in real-world environments — from NLP-driven risk
-              detection to scalable web applications. My work focuses on
-              building secure, data-driven solutions that deliver measurable
-              technical, business, and social impact.
+              I build and deploy production-grade AI and machine learning
+              systems that solve real-world problems — across the UK public
+              sector and beyond. From NLP-powered risk detection to intelligent
+              automation platforms, I specialise in turning complex data
+              challenges into secure, scalable, and high-impact solutions.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-2">
@@ -47,7 +50,7 @@ export default function Hero() {
                 View Featured Work
               </a>
               <a
-                href="/Franklyn_Oliha_Data_Scientist_Machine_Learning_Engineer_upd_CV.pdf"
+                href="/Franklyn_Oliha_Public_CV.pdf"
                 download
                 className="inline-flex items-center justify-center bg-white text-blue-600 border-2 border-blue-600 px-6 md:px-8 py-3 md:py-3.5 rounded-xl font-semibold text-sm md:text-base hover:bg-blue-50 hover:border-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
               >

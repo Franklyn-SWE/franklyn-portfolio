@@ -1,6 +1,37 @@
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Projects() {
+  const hackathonSectionRef = useRef(null);
+  const [isHackathonVisible, setIsHackathonVisible] = useState(false);
+
+  useEffect(() => {
+    const sectionElement = hackathonSectionRef.current;
+
+    if (!sectionElement) {
+      return undefined;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsHackathonVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.2 },
+    );
+
+    observer.observe(sectionElement);
+
+    return () => observer.disconnect();
+  }, []);
+
+  const revealBaseClass =
+    "motion-reduce:transition-none motion-reduce:transform-none motion-reduce:opacity-100 will-change-transform transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]";
+  const revealHiddenClass = "opacity-0 translate-y-4";
+  const revealVisibleClass = "opacity-100 translate-y-0";
+
   const projects = [
     {
       title: "🤖 LeadMate AI – Multi-Tenant Sales Automation Platform",
@@ -61,44 +92,128 @@ export default function Projects() {
   ];
 
   return (
-    <section className="mb-16" id="projects">
-      <div className="text-center mb-10">
-        <h2 className="text-2xl md:text-3xl font-bold mb-3 text-slate-900">
-          Featured Work
-        </h2>
-        <p className="text-base md:text-lg text-slate-600 max-w-3xl mx-auto px-4">
-          A selection of real-world systems demonstrating applied software
-          engineering, machine learning, and data science expertise.
-        </p>
-      </div>
-      <div className="grid gap-8">
-        {projects.map((project, index) => (
+    <>
+      <section
+        ref={hackathonSectionRef}
+        className="mt-8 mb-16 bg-[#fafafa] border-t border-[#eee] pt-[80px] pb-[60px] px-4 md:px-6"
+      >
+        <div className="max-w-6xl mx-auto">
           <div
-            key={index}
-            className="group bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-100 hover:scale-[1.02]"
+            className={`text-center mb-10 ${revealBaseClass} ${
+              isHackathonVisible ? revealVisibleClass : revealHiddenClass
+            }`}
           >
-            <h3 className="text-xl md:text-2xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors mb-2">
-              {project.title}
-            </h3>
-            <p
-              className={`font-semibold mb-4 bg-gradient-to-r ${project.gradient} bg-clip-text text-transparent`}
-            >
-              {project.category}
-            </p>
-            <p className="text-slate-700 text-base md:text-lg leading-relaxed">
-              {project.description}
-            </p>
+            <h2 className="text-2xl md:text-4xl font-bold text-slate-900 leading-tight">
+              From Early Data Science Experience to Production AI Systems
+            </h2>
           </div>
-        ))}
-      </div>
-      <div className="text-center mt-12">
-        <Link
-          to="/recruiters"
-          className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold text-base md:text-lg hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl hover:scale-105 duration-300"
-        >
-          View All Projects
-        </Link>
-      </div>
-    </section>
+
+          <div className="bg-white p-6 md:p-8 rounded-2xl border border-slate-100 shadow-lg">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-6 mb-10">
+              <div
+                className={`md:col-span-6 rounded-xl border border-slate-200 bg-slate-50 p-3 shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(0,0,0,0.12)] transition-all duration-300 ${revealBaseClass} ${
+                  isHackathonVisible ? revealVisibleClass : revealHiddenClass
+                }`}
+                style={{
+                  transitionDelay: isHackathonVisible ? "100ms" : "0ms",
+                }}
+              >
+                <img
+                  src="/hk_1.jpeg"
+                  alt="Climate Data Hackathon featured design"
+                  className="w-full h-72 md:h-[22rem] object-contain rounded-lg"
+                />
+              </div>
+              <div
+                className={`md:col-span-6 rounded-xl border border-slate-200 bg-slate-50 p-3 shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(0,0,0,0.12)] transition-all duration-300 ${revealBaseClass} ${
+                  isHackathonVisible ? revealVisibleClass : revealHiddenClass
+                }`}
+                style={{
+                  transitionDelay: isHackathonVisible ? "200ms" : "0ms",
+                }}
+              >
+                <img
+                  src="/hk_3.jpeg"
+                  alt="Climate Data Hackathon group photo"
+                  className="w-full h-72 md:h-[22rem] object-cover rounded-lg"
+                />
+              </div>
+            </div>
+
+            <div
+              className={`max-w-3xl ${revealBaseClass} ${
+                isHackathonVisible ? revealVisibleClass : revealHiddenClass
+              }`}
+              style={{ transitionDelay: isHackathonVisible ? "250ms" : "0ms" }}
+            >
+              <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-2">
+                Climate Change Data Hackathon - University of Bolton (2021)
+              </h3>
+              <p className="font-semibold mb-5 text-emerald-600">
+                Early Experience · Data Science
+              </p>
+              <p className="text-slate-700 text-base md:text-lg leading-8 mb-5">
+                Participated in a climate-focused data hackathon working with
+                real-world environmental datasets to develop actionable
+                insights.
+              </p>
+              <p className="text-slate-700 text-base md:text-lg leading-8 mb-7">
+                This experience marked the early stage of my journey into data
+                science and machine learning, building the foundation for my
+                transition into production-level AI systems.
+              </p>
+              <a
+                href="https://www.bolton.gov.uk/news/article/1314/climate-change-hackathon-making-a-difference-with-data"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center rounded-lg border border-blue-200 text-blue-700 px-4 py-2 font-semibold hover:bg-blue-50 transition-colors"
+              >
+                View Official Event Coverage →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mb-16" id="projects">
+        <div className="text-center mb-10">
+          <h2 className="text-2xl md:text-3xl font-bold mb-3 text-slate-900">
+            Featured Work
+          </h2>
+          <p className="text-base md:text-lg text-slate-600 max-w-3xl mx-auto px-4">
+            A selection of real-world systems demonstrating applied software
+            engineering, machine learning, and data science expertise.
+          </p>
+        </div>
+        <div className="grid gap-8">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="group bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-100 hover:scale-[1.02]"
+            >
+              <h3 className="text-xl md:text-2xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors mb-2">
+                {project.title}
+              </h3>
+              <p
+                className={`font-semibold mb-4 bg-gradient-to-r ${project.gradient} bg-clip-text text-transparent`}
+              >
+                {project.category}
+              </p>
+              <p className="text-slate-700 text-base md:text-lg leading-relaxed">
+                {project.description}
+              </p>
+            </div>
+          ))}
+        </div>
+        <div className="text-center mt-12">
+          <Link
+            to="/recruiters"
+            className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold text-base md:text-lg hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl hover:scale-105 duration-300"
+          >
+            View All Projects
+          </Link>
+        </div>
+      </section>
+    </>
   );
 }
