@@ -104,7 +104,7 @@ export default function Projects() {
             }`}
           >
             <h2 className="text-2xl md:text-4xl font-bold text-slate-900 leading-tight">
-              From Early Data Science Experience to Production AI Systems
+              From Hackathons to Production AI Systems
             </h2>
           </div>
 
