@@ -7,8 +7,7 @@ export default function About() {
           About Me
         </h1>
         <p className="text-lg md:text-xl text-slate-700 font-semibold max-w-3xl mx-auto">
-          Machine Learning Engineer &middot; AI Systems Builder &middot;
-          Software Engineer
+          AI Systems Engineer  &middot; Machine Learning Engineer
         </p>
       </div>
 

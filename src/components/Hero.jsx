@@ -10,8 +10,7 @@ export default function Hero() {
                 Franklyn Oliha
               </h1>
               <p className="text-base md:text-lg lg:text-xl text-slate-700 font-semibold md:whitespace-nowrap">
-                Machine Learning Engineer · AI Systems Builder · Software
-                Engineer
+                AI Systems Engineer · Machine Engineer
               </p>
               <p className="text-sm md:text-base text-slate-500 italic">
                 Machine Learning Engineer (UK Public Sector) | Founder,
