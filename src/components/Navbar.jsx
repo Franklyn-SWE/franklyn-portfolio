@@ -30,7 +30,7 @@ export default function Navbar() {
               About Me
             </Link>
             <Link
-              to="/recruiters"
+              to="/projects"
               className="text-white hover:text-blue-300 transition-colors font-medium whitespace-nowrap py-2"
             >
               Projects

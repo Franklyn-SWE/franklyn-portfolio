@@ -81,6 +81,7 @@ export default function Projects() {
       description:
         "A production automation platform integrating backend services and workflow orchestration to streamline complex enterprise processes, reduce manual operational overhead, and improve system reliability.",
       gradient: "from-green-500 to-emerald-500",
+      showOnHome: false,
     },
     {
       title: "🧾 Real-Time Attendance Management System",
@@ -88,6 +89,7 @@ export default function Projects() {
       description:
         "A production-ready web application enabling real-time attendance tracking across multiple devices, featuring role-based access, live data synchronization, and session finalization to ensure data integrity during live events.",
       gradient: "from-indigo-500 to-purple-500",
+      showOnHome: false,
     },
   ];
 
@@ -181,14 +183,124 @@ export default function Projects() {
             Featured Work
           </h2>
           <p className="text-base md:text-lg text-slate-600 max-w-3xl mx-auto px-4">
-            A selection of real-world systems demonstrating applied software
-            engineering, machine learning, and data science expertise.
+            Selected production systems across generative AI, machine learning,
+            data and software engineering.
           </p>
         </div>
         <div className="grid gap-8">
-          {projects.map((project, index) => (
+          <article className="group overflow-hidden rounded-2xl border border-blue-100 bg-white shadow-xl transition-all duration-300 hover:shadow-2xl md:grid md:grid-cols-2">
+            <div className="relative bg-slate-900 p-3 md:p-4">
+              <img
+                src="/proagent_4.png"
+                alt="ProAgent AI strategic report history interface"
+                className="h-64 w-full rounded-xl object-cover object-left md:h-full md:min-h-[26rem]"
+              />
+            </div>
+            <div className="p-6 md:p-8 flex flex-col items-start">
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="rounded-full bg-blue-100 px-3 py-1 text-sm font-bold text-blue-700">
+                  Featured AI Project
+                </span>
+                <span className="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-sm font-bold text-emerald-700">
+                  Public Beta
+                </span>
+              </div>
+              <p className="font-semibold text-blue-600 mb-2">Professional Intelligence Platform</p>
+              <h3 className="text-2xl md:text-3xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors mb-4">
+                ProAgent AI
+              </h3>
+              <p className="text-slate-700 text-base md:text-lg leading-relaxed mb-5">
+                ProAgent AI is a production AI professional intelligence platform that transforms structured discovery into personalised strategic reports and contextual AI advisory.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-7">
+                {["Next.js", "TypeScript", "Supabase", "PostgreSQL", "Anthropic Claude", "Generative AI"].map((technology) => (
+                  <span key={technology} className="rounded-lg border border-blue-200 bg-blue-50 px-3 py-1 text-sm font-semibold text-blue-700">
+                    {technology}
+                  </span>
+                ))}
+              </div>
+              <div className="mt-auto flex flex-col sm:flex-row gap-3 w-full">
+                <a
+                  href="https://proagent.mudiatech.co.uk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex justify-center items-center rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 px-5 py-3 font-semibold text-white shadow-lg transition-all hover:from-blue-700 hover:to-purple-700"
+                >
+                  View Live Product <span aria-hidden="true" className="ml-2">↗</span>
+                </a>
+                <Link
+                  to="/projects/proagent-ai"
+                  className="inline-flex justify-center items-center rounded-xl border border-blue-200 bg-white px-5 py-3 font-semibold text-blue-700 transition-colors hover:bg-blue-50"
+                >
+                  View Case Study
+                </Link>
+              </div>
+            </div>
+          </article>
+          <article className="group overflow-hidden rounded-2xl border border-amber-100 bg-white shadow-xl transition-all duration-300 hover:shadow-2xl md:grid md:grid-cols-2">
+            <div className="bg-[#121212] p-3 md:p-4">
+              <img
+                src="/screenshots/mudiatech-rag.png"
+                alt="MudiaTech Knowledge Assistant showing a grounded answer and approved source references"
+                className="h-auto w-full rounded-xl object-contain object-center"
+              />
+            </div>
+            <div className="p-6 md:p-8 flex flex-col items-start">
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="rounded-full bg-blue-100 px-3 py-1 text-sm font-bold text-blue-700">
+                  Featured AI Project
+                </span>
+                <span className="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-sm font-bold text-emerald-700">
+                  Live Production
+                </span>
+              </div>
+              <p className="font-semibold text-amber-700 mb-2">
+                Production AI · Retrieval-Augmented Generation
+              </p>
+              <h3 className="text-2xl md:text-3xl font-bold text-slate-900 group-hover:text-amber-700 transition-colors mb-4">
+                MudiaTech RAG Knowledge Assistant
+              </h3>
+              <p className="text-slate-700 text-base md:text-lg leading-relaxed mb-5">
+                A public knowledge assistant engineered to provide grounded answers from approved MudiaTech sources, with clear source attribution and knowledge-base document references.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-7">
+                {["Python", "FastAPI", "Qdrant", "BGE Embeddings", "Next.js", "Docker"].map((technology) => (
+                  <span key={technology} className="rounded-lg border border-amber-200 bg-amber-50 px-3 py-1 text-sm font-semibold text-amber-800">
+                    {technology}
+                  </span>
+                ))}
+              </div>
+              <div className="mt-auto flex flex-col sm:flex-row gap-3 w-full">
+                <a
+                  href="https://rag.mudiatech.co.uk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex justify-center items-center rounded-xl bg-amber-500 px-5 py-3 font-semibold text-slate-950 shadow-lg transition-colors hover:bg-amber-400"
+                >
+                  Try Live RAG <span aria-hidden="true" className="ml-2">↗</span>
+                </a>
+                <Link
+                  to="/projects/mudiatech-rag"
+                  className="inline-flex justify-center items-center rounded-xl border border-amber-200 bg-white px-5 py-3 font-semibold text-amber-800 transition-colors hover:bg-amber-50"
+                >
+                  View Case Study
+                </Link>
+              </div>
+            </div>
+          </article>
+          <div className="pt-4 md:pt-6 text-center">
+            <h3 className="text-2xl md:text-3xl font-bold mb-3 text-slate-900">
+              More Selected Projects
+            </h3>
+            <p className="text-base md:text-lg text-slate-600 max-w-3xl mx-auto px-4">
+              Additional work across AI automation, NLP, predictive modelling and software engineering.
+            </p>
+          </div>
+          {projects
+            .filter((project) => project.showOnHome !== false)
+            .map((project) => (
             <div
-              key={index}
+              key={project.title}
               className="group bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-100 hover:scale-[1.02]"
             >
               <h3 className="text-xl md:text-2xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors mb-2">
@@ -203,14 +315,14 @@ export default function Projects() {
                 {project.description}
               </p>
             </div>
-          ))}
+            ))}
         </div>
-        <div className="text-center mt-12">
+        <div className="text-center mt-10">
           <Link
-            to="/recruiters"
-            className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold text-base md:text-lg hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl hover:scale-105 duration-300"
+            to="/projects"
+            className="inline-flex items-center justify-center rounded-lg px-4 py-2 font-semibold text-blue-700 transition-colors hover:bg-blue-50 hover:text-blue-800"
           >
-            View All Projects
+            View All Projects <span aria-hidden="true" className="ml-1">→</span>
           </Link>
         </div>
       </section>

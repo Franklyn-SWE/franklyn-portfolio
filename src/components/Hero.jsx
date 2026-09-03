@@ -9,12 +9,11 @@ export default function Hero() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent leading-tight">
                 Franklyn Oliha
               </h1>
-              <p className="text-base md:text-lg lg:text-xl text-slate-700 font-semibold md:whitespace-nowrap">
-                AI Systems Engineer · Machine Engineer
+              <p className="text-base md:text-lg lg:text-xl text-slate-700 font-semibold lg:whitespace-nowrap">
+                AI Systems Engineer · Machine Learning Engineer
               </p>
               <p className="text-sm md:text-base text-slate-500 italic">
-                Machine Learning Engineer (UK Public Sector) | Founder,
-                MudiaTech
+                Software Engineer · Data Scientist · Founder, MudiaTech
               </p>
             </div>
 
@@ -34,11 +33,12 @@ export default function Hero() {
             </div>
 
             <p className="text-base md:text-lg text-slate-600 leading-relaxed max-w-2xl">
-              I build and deploy production-grade AI and machine learning
-              systems that solve real-world problems — across the UK public
-              sector and beyond. From NLP-powered risk detection to intelligent
-              automation platforms, I specialise in turning complex data
-              challenges into secure, scalable, and high-impact solutions.
+              I design, build and deploy production-grade AI, machine learning
+              and software systems that solve real-world problems — across the
+              UK public sector and beyond. From Generative AI and RAG to NLP,
+              predictive modelling and intelligent automation, I specialise in
+              turning complex data and operational challenges into secure,
+              scalable and high-impact solutions.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-2">

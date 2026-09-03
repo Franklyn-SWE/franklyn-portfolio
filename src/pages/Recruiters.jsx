@@ -1,3 +1,69 @@
+import FeaturedProjectListingCard from "../components/FeaturedProjectListingCard";
+
+const expertiseCategories = [
+  {
+    icon: "💻",
+    title: "Programming Languages",
+    skills: ["Python", "TypeScript", "JavaScript", "Java", "SQL", "T-SQL", "R"],
+    badgeClass:
+      "bg-blue-50 text-blue-700 border border-blue-200",
+  },
+  {
+    icon: "🌐",
+    title: "Application & API Engineering",
+    skills: ["Next.js", "React", "FastAPI", "Node.js", "Django", "Flask", "REST APIs"],
+    badgeClass:
+      "bg-purple-50 text-purple-700 border border-purple-200",
+  },
+  {
+    icon: "🤖",
+    title: "AI, ML & Generative AI",
+    skills: [
+      "RAG",
+      "LLM Applications",
+      "Transformers",
+      "BERT",
+      "PyTorch",
+      "TensorFlow",
+      "Scikit-learn",
+      "NLP",
+      "Embeddings",
+      "Model Evaluation",
+    ],
+    badgeClass:
+      "bg-pink-50 text-pink-700 border border-pink-200",
+  },
+  {
+    icon: "💾",
+    title: "Data, SQL & Vector Systems",
+    skills: [
+      "PostgreSQL",
+      "Supabase",
+      "Qdrant",
+      "SQL Server",
+      "MongoDB",
+      "SQLite",
+      "Firestore",
+    ],
+    badgeClass:
+      "bg-indigo-50 text-indigo-700 border border-indigo-200",
+  },
+  {
+    icon: "☁️",
+    title: "Cloud, Deployment & DevOps",
+    skills: ["AWS", "Azure", "Docker", "Vercel", "Netlify", "CI/CD", "Git", "Bash", "n8n"],
+    badgeClass:
+      "bg-green-50 text-green-700 border border-green-200",
+  },
+  {
+    icon: "📊",
+    title: "Data, Analytics & Delivery",
+    skills: ["Pandas", "Databricks", "Power BI", "Matplotlib", "Agile", "Scrum", "CRISP-DM", "SDLC"],
+    badgeClass:
+      "bg-amber-50 text-amber-700 border border-amber-200",
+  },
+];
+
 export default function Recruiters() {
   return (
     <div className="max-w-6xl mx-auto px-6 py-12">
@@ -22,6 +88,52 @@ export default function Recruiters() {
           </p>
         </div>
         <div className="space-y-8">
+          {/* ProAgent AI - Professional Intelligence Platform */}
+          <FeaturedProjectListingCard
+            title="⚡ ProAgent AI — Professional Intelligence Platform"
+            category="Production AI · Generative AI Engineering"
+            description="Engineered a production AI professional intelligence platform combining AI-guided discovery, contextual profile analysis, personalised strategy report generation and ongoing strategic advisory."
+            technologies={[
+              "Next.js",
+              "TypeScript",
+              "Supabase",
+              "PostgreSQL",
+              "Anthropic Claude",
+              "Generative AI",
+            ]}
+            highlights="Engineered authentication, user/session isolation, contextual AI workflows, strategic report generation, usage controls, analytics, feedback telemetry and production reliability safeguards."
+            liveProductUrl="https://proagent.mudiatech.co.uk"
+            caseStudyPath="/projects/proagent-ai"
+          />
+
+          {/* MudiaTech RAG Knowledge Assistant */}
+          <FeaturedProjectListingCard
+            title={
+              <>
+                <img
+                  src="/images/MT_Logo_MAIN.png"
+                  alt=""
+                  aria-hidden="true"
+                  className="inline-block h-7 w-7 rounded-sm object-contain align-[-0.15em] mr-2"
+                />
+                MudiaTech RAG Knowledge Assistant
+              </>
+            }
+            category="Production AI · Retrieval-Augmented Generation"
+            description="Engineered a public knowledge assistant that provides grounded answers to user questions from approved MudiaTech knowledge sources, with visible source attribution and document references."
+            technologies={[
+              "Retrieval-Augmented Generation",
+              "Grounded Responses",
+              "Source Attribution",
+              "Knowledge Base",
+            ]}
+            highlights="Built a source-aware question-answering experience that keeps responses connected to approved knowledge-base documents and makes the supporting references visible to users."
+            liveProductUrl="https://rag.mudiatech.co.uk"
+            caseStudyPath="/projects/mudiatech-rag"
+            badge="Featured RAG Project"
+            status={null}
+          />
+
           {/* LeadMate AI - Multi-Tenant Sales Automation Platform */}
           <div className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border-l-4 border-orange-600 hover:shadow-xl transition-shadow">
             <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-2">
@@ -799,139 +911,29 @@ export default function Recruiters() {
           Technical Expertise
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-slate-100">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-3xl">💻</span>
-              <h3 className="font-bold text-lg">Programming Languages</h3>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {["Python", "Java", "JavaScript", "SQL", "T-SQL", "R"].map(
-                (lang, i) => (
+          {expertiseCategories.map((category) => (
+            <div
+              key={category.title}
+              className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-slate-100"
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-3xl" aria-hidden="true">
+                  {category.icon}
+                </span>
+                <h3 className="font-bold text-lg">{category.title}</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {category.skills.map((skill) => (
                   <span
-                    key={i}
-                    className="bg-blue-50 text-blue-700 px-3 py-1 rounded-lg text-sm font-semibold border border-blue-200"
+                    key={skill}
+                    className={`${category.badgeClass} px-3 py-1 rounded-lg text-sm font-semibold`}
                   >
-                    {lang}
+                    {skill}
                   </span>
-                ),
-              )}
+                ))}
+              </div>
             </div>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-slate-100">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-3xl">🌐</span>
-              <h3 className="font-bold text-lg">Core Development Frameworks</h3>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {[
-                "Django",
-                "Flask",
-                "Node.js",
-                "React",
-                "PyTorch",
-                "TensorFlow",
-              ].map((fw, i) => (
-                <span
-                  key={i}
-                  className="bg-purple-50 text-purple-700 px-3 py-1 rounded-lg text-sm font-semibold border border-purple-200"
-                >
-                  {fw}
-                </span>
-              ))}
-            </div>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-slate-100">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-3xl">🤖</span>
-              <h3 className="font-bold text-lg">Machine Learning & AI</h3>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {[
-                "NLP",
-                "BERT",
-                "Deep Learning",
-                "Neural Networks",
-                "Transformers",
-                "Databricks",
-                "Power BI",
-                "Matplotlib",
-              ].map((ml, i) => (
-                <span
-                  key={i}
-                  className="bg-pink-50 text-pink-700 px-3 py-1 rounded-lg text-sm font-semibold border border-pink-200"
-                >
-                  {ml}
-                </span>
-              ))}
-            </div>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-slate-100">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-3xl">☁️</span>
-              <h3 className="font-bold text-lg">Model Deployment & Systems</h3>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {[
-                "Azure",
-                "Docker",
-                "Streamlit",
-                "Firebase",
-                "Gradio",
-                "CI/CD",
-                "Git",
-                "APIs",
-                "Bash",
-                "n8n",
-              ].map((cloud, i) => (
-                <span
-                  key={i}
-                  className="bg-green-50 text-green-700 px-3 py-1 rounded-lg text-sm font-semibold border border-green-200"
-                >
-                  {cloud}
-                </span>
-              ))}
-            </div>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-slate-100">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-3xl">💾</span>
-              <h3 className="font-bold text-lg">Databases</h3>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {[
-                "PostgreSQL",
-                "SQL Server",
-                "MongoDB",
-                "SQLite",
-                "Firestore",
-              ].map((db, i) => (
-                <span
-                  key={i}
-                  className="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-lg text-sm font-semibold border border-indigo-200"
-                >
-                  {db}
-                </span>
-              ))}
-            </div>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-slate-100">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-3xl">📊</span>
-              <h3 className="font-bold text-lg">Methodologies & Delivery</h3>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {["Scrum", "Agile", "CRISP-DM", "SDLC", "Lean"].map(
-                (method, i) => (
-                  <span
-                    key={i}
-                    className="bg-amber-50 text-amber-700 px-3 py-1 rounded-lg text-sm font-semibold border border-amber-200"
-                  >
-                    {method}
-                  </span>
-                ),
-              )}
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
