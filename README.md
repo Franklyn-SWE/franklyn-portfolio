@@ -7,7 +7,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Version](https://img.shields.io/badge/Version-2.0.0-orange)
 
-A modern, fully responsive professional portfolio for a **Machine Learning Engineer & AI Systems Builder**. Built with React 18 + Vite + Tailwind CSS and deployed on Netlify with continuous deployment from GitHub.
+A modern, fully responsive professional portfolio for an **AI Systems Engineer, Machine Learning Engineer, Software Engineer, and Data Scientist**. Built with React 18 + Vite + Tailwind CSS and deployed on Netlify with continuous deployment from GitHub.
 
 ---
 
@@ -34,18 +34,29 @@ Hosted on Netlify with HTTPS, global CDN, and automatic deploys on every push to
 ## ✨ Features
 
 - **Fully Responsive** — mobile-first design tested across phones, tablets, and desktops
-- **Four Main Pages** — Home, About Me, Projects (Recruiters), Clients
+- **Four Main Pages** — Home, About Me, Projects, Clients
 - **Hero Section** — animated gradient heading, professional profile photo, badge row, dual CTA
 - **Hackathon Section** — scroll-reveal animation with `IntersectionObserver`, staggered image transitions, and `prefers-reduced-motion` support
-- **Featured Work Showcase** — 5 project cards on the homepage, linking to full case studies
-- **Full Project Case Studies** — expandable `<details>` with problem / solution / technical approach / outcome per project
-- **Technical Expertise Grid** — categorised skill tags across Languages, Frameworks, ML/AI, Deployment, and Databases
+- **Featured Work Showcase** — ProAgent AI and MudiaTech RAG lead the homepage, followed by selected AI, NLP, and predictive-modelling projects
+- **Dedicated AI Case Studies** — recruiter-focused pages for ProAgent AI and the MudiaTech RAG Knowledge Assistant
+- **Technical Expertise Grid** — six current categories spanning languages, application/API engineering, AI/ML, vector systems, cloud deployment, and analytics
+- **Social Sharing Metadata** — Open Graph and Twitter Card metadata using the professional profile image for shared-link previews
 - **About Me Page** — first-person professional biography with career timeline and values
 - **Clients Page** — service offerings, engagement process, and consultation CTA
 - **CV Download** — single PDF downloadable from Navbar, Hero, About, and Projects pages
 - **Sticky Gradient Navbar** — horizontal scroll on mobile with hidden scrollbar
 - **Smooth Scroll Animations** — `cubic-bezier` transitions with reduced-motion fallback
 - **Accessible** — semantic HTML, `alt` attributes on all images, `rel="noopener noreferrer"` on external links
+
+---
+
+## Current Portfolio Updates
+
+- **ProAgent AI** is the primary featured AI project, with a dedicated case study at `/projects/proagent-ai`.
+- **MudiaTech RAG Knowledge Assistant** is the second featured project, with grounded-answer and source-attribution visuals plus a dedicated case study at `/projects/mudiatech-rag`.
+- **`/projects`** is the canonical full-projects route. The legacy `/recruiters` route redirects to it for backwards compatibility.
+- Homepage project selection focuses on ProAgent AI, MudiaTech RAG, LeadMate AI, coercion detection, and UK house-price prediction. Enterprise Automation and Real-Time Attendance remain on the full Projects page.
+- The Hero and About pages reflect current AI systems engineering, Generative AI, RAG, software engineering, data science, and MudiaTech positioning.
 
 ---
 
@@ -100,6 +111,16 @@ franklyn-portfolio/
 
 ---
 
+## Recently Added Files
+
+- `src/components/FeaturedProjectListingCard.jsx` — reusable featured-project card for the full Projects page
+- `src/pages/ProAgentCaseStudy.jsx` — ProAgent AI engineering case study
+- `src/pages/MudiaTechRagCaseStudy.jsx` — MudiaTech RAG Knowledge Assistant case study
+- `public/screenshots/mudiatech-rag.png` — MudiaTech RAG product screenshot
+- `public/images/MT_Logo_MAIN.png` — MudiaTech title icon used in the Projects listing
+
+---
+
 ## 🛠️ Local Development
 
 **Prerequisites:** Node.js v18+ and npm v9+
@@ -136,15 +157,27 @@ Hero section with name, title, badge row (Secure Environment Experience, Manches
 
 First-person professional biography covering academic background, professional experience, entrepreneurship (MudiaTech, Mudia Estate Limited), leadership values, and a Let's Connect CTA.
 
-### Projects (`/recruiters`)
+### Projects (`/projects`)
 
 Detailed project case studies with expandable sections:
 
+- ProAgent AI — professional intelligence platform (dedicated case study)
+- MudiaTech RAG Knowledge Assistant — grounded knowledge assistant (dedicated case study)
 - LeadMate AI — multi-tenant SaaS platform
 - Human Trafficking Coercion Detection System — BERT NLP
 - UK House Price Prediction Platform — LightGBM/XGBoost
 - Enterprise Automation Platform — Django + n8n + Azure
 - Real-Time Attendance Management System — Firebase
+
+`/recruiters` redirects to `/projects` to preserve existing shared links and bookmarks.
+
+### ProAgent AI Case Study (`/projects/proagent-ai`)
+
+Production AI engineering case study covering AI-guided discovery, contextual report generation, advisory workflows, architecture, reliability safeguards, and the live product link.
+
+### MudiaTech RAG Case Study (`/projects/mudiatech-rag`)
+
+Case study covering a public, source-aware knowledge assistant with grounded responses, approved-source attribution, and document references.
 
 ### Clients (`/clients`)
 
@@ -175,9 +208,21 @@ The site deploys automatically to Netlify on every push to `master`. The `public
 /* /index.html 200
 ```
 
+The HTML template also includes canonical, Open Graph, and Twitter Card metadata. Shared links use `https://www.franklynoliha.com/profile.jpg` as the preview image.
+
 ---
 
 ## 📄 Changelog
+
+### v2.1.0 — September 2026
+
+- Added ProAgent AI and MudiaTech RAG Knowledge Assistant as the leading featured projects
+- Added dedicated case-study routes for ProAgent AI and MudiaTech RAG
+- Added MudiaTech RAG product screenshot and MudiaTech title-logo assets
+- Made `/projects` the canonical Projects route and retained a `/recruiters` redirect
+- Refreshed Hero, About, and Technical Expertise content for current AI engineering, RAG, ML, cloud, deployment, and data capabilities
+- Simplified homepage project selection while retaining the broader portfolio on `/projects`
+- Added Open Graph and Twitter Card metadata for profile-photo link previews
 
 ### v2.0.0 — April 2026
 
