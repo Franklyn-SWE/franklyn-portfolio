@@ -30,9 +30,10 @@ export default function About() {
         </h2>
         <div className="bg-gradient-to-br from-white to-blue-50 p-6 md:p-8 rounded-2xl shadow-lg border border-blue-100">
           <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-5">
-            I'm a Machine Learning Engineer and AI Systems Builder focused on
-            designing and deploying production-grade AI systems for real-world
-            environments across public and private sectors.
+            I'm an AI Systems Engineer and Machine Learning Engineer focused on
+            designing, engineering and deploying production-grade AI, machine
+            learning and software systems across public and private-sector
+            environments.
           </p>
           <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-5">
             I hold an{" "}
@@ -45,9 +46,10 @@ export default function About() {
             building secure, scalable, and high-impact solutions.
           </p>
           <p className="text-base md:text-lg text-slate-700 leading-relaxed">
-            My work centres on taking systems from research and experimentation
-            into fully deployed environments &mdash; ensuring they are reliable,
-            maintainable, and deliver measurable value.
+            My work spans Generative AI, Retrieval-Augmented Generation,
+            machine learning, NLP, intelligent automation and full-stack
+            software engineering, with a strong focus on taking systems from
+            experimentation through to reliable production deployment.
           </p>
         </div>
       </section>
@@ -59,19 +61,21 @@ export default function About() {
         </h2>
         <div className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border-l-4 border-blue-600">
           <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-5">
-            I bring together expertise across software engineering, machine
-            learning, and data science, enabling me to build end-to-end systems
-            that move seamlessly from concept to deployment.
+            I bring together expertise across software engineering, artificial
+            intelligence, machine learning and data science, enabling me to
+            build end-to-end systems that move from concept and experimentation
+            through to production deployment.
           </p>
           <p className="text-base md:text-lg text-slate-700 font-semibold mb-3">
             I work across:
           </p>
           <ul className="space-y-2 mb-6">
             {[
-              "Full-stack application development",
-              "Machine learning model development & deployment",
-              "Cloud-based system architecture",
-              "API design and backend engineering",
+              "Production AI and Generative AI application engineering",
+              "Retrieval-Augmented Generation and semantic retrieval systems",
+              "Machine learning model development, evaluation and deployment",
+              "Full-stack application and API engineering",
+              "Cloud, containerised and data-system architecture",
             ].map((item) => (
               <li
                 key={item}
@@ -83,9 +87,10 @@ export default function About() {
             ))}
           </ul>
           <p className="text-base md:text-lg text-slate-700 leading-relaxed">
-            My focus includes predictive analytics, natural language processing
-            (NLP), and applied AI, with an emphasis on building systems that
-            perform reliably in real-world conditions.
+            My technical focus includes Generative AI, RAG, NLP, predictive
+            modelling, vector retrieval and applied machine learning, with an
+            emphasis on secure, maintainable systems that perform reliably in
+            real-world environments.
           </p>
         </div>
       </section>
@@ -97,14 +102,16 @@ export default function About() {
         </h2>
         <div className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border-l-4 border-blue-600">
           <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-5">
-            I have delivered a range of production-grade software and machine
-            learning systems, including:
+            I have engineered and delivered production-focused systems spanning:
           </p>
           <ul className="space-y-2 mb-6">
             {[
-              "Intelligent automation platforms",
-              "NLP-driven analytics and risk detection systems",
-              "Scalable web and backend applications",
+              "Generative AI and professional intelligence platforms",
+              "Retrieval-Augmented Generation and knowledge assistants",
+              "Intelligent automation and AI-enabled workflows",
+              "NLP and multi-label machine learning systems",
+              "Predictive analytics and forecasting platforms",
+              "Scalable full-stack applications and backend APIs",
             ].map((item) => (
               <li
                 key={item}
@@ -116,8 +123,9 @@ export default function About() {
             ))}
           </ul>
           <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-5">
-            My work is grounded in Agile and Scrum methodologies, with a strong
-            emphasis on performance, maintainability, and measurable outcomes.
+            My work is grounded in Agile and Scrum delivery, with a strong
+            emphasis on reliability, maintainability, performance and measurable
+            outcomes.
           </p>
           <p className="text-base md:text-lg text-slate-700 font-semibold mb-3">
             I prioritise building systems that:
@@ -176,13 +184,14 @@ export default function About() {
               MudiaTech
             </h3>
             <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-3">
-              I'm the Founder of MudiaTech, where I design and build AI-powered
-              software systems, automation platforms, and scalable SaaS
-              products.
+              I'm the Founder of MudiaTech, where I design and engineer
+              AI-powered software products, intelligent automation systems,
+              knowledge assistants and data-driven solutions.
             </p>
             <p className="text-base md:text-lg text-slate-700 leading-relaxed">
-              Through MudiaTech, I help businesses transform complex challenges
-              into intelligent, data-driven solutions.
+              Through MudiaTech, I focus on translating real business and
+              operational challenges into practical, scalable AI and software
+              systems.
             </p>
           </div>
           <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-6 md:p-8 rounded-2xl shadow-lg border-l-4 border-green-500">
@@ -190,15 +199,16 @@ export default function About() {
               Mudia Estate Limited
             </h3>
             <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-4">
-              I apply machine learning and analytics within the real estate
-              domain, developing systems for:
+              Through Mudia Estate Limited, I apply data science, machine
+              learning and analytics to property and investment decision-making,
+              including:
             </p>
             <ul className="space-y-2">
               {[
-                "House price prediction",
-                "Market trend analysis",
-                "Investment risk assessment",
-                "Customer sentiment analysis",
+                "Property price prediction and valuation",
+                "Market and trend analysis",
+                "Property deal assessment",
+                "Data-informed investment decision support",
               ].map((item) => (
                 <li
                   key={item}
@@ -220,9 +230,10 @@ export default function About() {
         </h2>
         <div className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border-l-4 border-indigo-500">
           <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-5">
-            I combine technical expertise with strategic thinking, working
-            effectively with multidisciplinary teams and stakeholders to deliver
-            scalable and maintainable systems.
+            I combine hands-on technical engineering with strategic thinking and
+            cross-functional collaboration, working with technical teams,
+            stakeholders and decision-makers to translate complex AI and
+            software concepts into practical, maintainable solutions.
           </p>
           <p className="text-base md:text-lg text-slate-700 font-semibold mb-3">
             My approach emphasises:
@@ -264,8 +275,8 @@ export default function About() {
               },
               {
                 icon: "\uD83D\uDE80",
-                title: "Applied Practice",
-                desc: "Applying data science and machine learning beyond theory",
+                title: "Applied AI Engineering",
+                desc: "Turning AI, machine learning and software concepts into production systems",
               },
               {
                 icon: "\uD83C\uDFD7\uFE0F",
@@ -291,9 +302,10 @@ export default function About() {
             ))}
           </div>
           <p className="text-base md:text-lg text-slate-700 leading-relaxed">
-            I am particularly motivated by work that sits at the intersection of
-            software engineering, machine learning, and data-informed
-            decision-making.
+            I am particularly motivated by work at the intersection of software
+            engineering, artificial intelligence, machine learning and
+            data-informed decision-making — especially where technology can
+            solve meaningful operational and business problems.
           </p>
         </div>
       </section>

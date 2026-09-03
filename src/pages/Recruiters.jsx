@@ -110,12 +110,16 @@ export default function Recruiters() {
           <FeaturedProjectListingCard
             title={
               <>
-                <img
-                  src="/images/MT_Logo_MAIN.png"
-                  alt=""
+                <span
+                  className="inline-flex h-7 w-7 overflow-hidden rounded-sm align-[-0.15em] mr-2"
                   aria-hidden="true"
-                  className="inline-block h-7 w-7 rounded-sm object-contain align-[-0.15em] mr-2"
-                />
+                >
+                  <img
+                    src="/images/MT_Logo_MAIN.png"
+                    alt=""
+                    className="h-7 w-7 scale-[3.5] object-contain"
+                  />
+                </span>
                 MudiaTech RAG Knowledge Assistant
               </>
             }
@@ -566,16 +570,6 @@ export default function Recruiters() {
               </div>
             </details>
 
-            <div>
-              <a
-                href="https://github.com/Franklyn-SWE/UK_HOUSE_PRICE_PREDICTION_V2"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-purple-600 hover:text-purple-800 font-semibold"
-              >
-                💻 GitHub
-              </a>
-            </div>
           </div>
 
           {/* Real-Time Attendance Management System */}
