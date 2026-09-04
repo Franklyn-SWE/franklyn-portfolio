@@ -30,10 +30,10 @@ export default function About() {
         </h2>
         <div className="bg-gradient-to-br from-white to-blue-50 p-6 md:p-8 rounded-2xl shadow-lg border border-blue-100">
           <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-5">
-            I'm an AI Systems Engineer and Machine Learning Engineer focused on
-            designing, engineering and deploying production-grade AI, machine
-            learning and software systems across public and private-sector
-            environments.
+            I'm Franklyn Oliha, founder of MudiaTech, and an AI Systems Engineer
+            and Machine Learning Engineer focused on designing, engineering and
+            deploying production-grade AI, machine learning and software systems
+            across public and private-sector environments.
           </p>
           <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-5">
             I hold an{" "}
@@ -269,22 +269,22 @@ export default function About() {
           <div className="grid sm:grid-cols-2 gap-6 mb-6">
             {[
               {
-                icon: "\uD83C\uDFAF",
+                icon: "🎯",
                 title: "Measurable Impact",
                 desc: "Building technology that delivers measurable real-world impact",
               },
               {
-                icon: "\uD83D\uDE80",
+                icon: "🚀",
                 title: "Applied AI Engineering",
                 desc: "Turning AI, machine learning and software concepts into production systems",
               },
               {
-                icon: "\uD83C\uDFD7\uFE0F",
+                icon: "🏗️",
                 title: "System Design",
                 desc: "Designing scalable, secure, and maintainable systems",
               },
               {
-                icon: "\uD83D\uDCC8",
+                icon: "📈",
                 title: "Continuous Growth",
                 desc: "Continuous improvement through learning and applied practice",
               },
