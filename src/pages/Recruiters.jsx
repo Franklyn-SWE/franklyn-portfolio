@@ -914,7 +914,7 @@ export default function Recruiters() {
             </span>
             <h3 className="mt-3 text-lg font-bold text-slate-900">Original Software Engineering Portfolio</h3>
             <p className="mt-2 text-sm leading-relaxed text-slate-700">
-              Explore the original portfolio and the software engineering projects it documents.
+              Browse the software engineering projects featured in my original 2023 portfolio.
             </p>
           </div>
           <a
