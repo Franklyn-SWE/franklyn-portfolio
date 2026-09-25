@@ -925,6 +925,11 @@ export default function Recruiters() {
         <p className="text-slate-600 mb-6 max-w-3xl">
           Projects from my original 2023 portfolio, preserved as part of my software engineering journey.
         </p>
+        <div className="mb-4">
+          <span className="inline-flex rounded-full border border-slate-200 bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-slate-600">
+            2023 archive
+          </span>
+        </div>
         <div className="grid gap-5 md:grid-cols-3">
           {earlierSoftwareProjects.map((project) => (
             <article key={project.title} className="flex flex-col rounded-xl border border-slate-200 bg-slate-50 p-6">
