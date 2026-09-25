@@ -937,7 +937,7 @@ export default function Recruiters() {
           ))}
         </div>
         <a
-          href="https://franklyn-swe.github.io/portfolio/archive/"
+          href="https://franklyn-swe.github.io/portfolio/archive/index.html"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-6 inline-flex items-center rounded-lg border border-blue-200 bg-white px-5 py-3 font-semibold text-blue-700 hover:bg-blue-50"
