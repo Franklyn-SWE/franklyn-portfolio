@@ -64,6 +64,24 @@ const expertiseCategories = [
   },
 ];
 
+const earlierSoftwareProjects = [
+  {
+    title: "Mental Health Detecting System",
+    summary: "A Django application for symptom-based screening, with separate workflows for administrators, nurses and doctors.",
+    url: "https://github.com/Franklyn-SWE/Mental-Health-Detecting-System/blob/main/README.md",
+  },
+  {
+    title: "Research Interface with Subscription Access",
+    summary: "A web application for researchers and scientists using Node.js, Express and MongoDB with subscription-based access.",
+    url: "https://github.com/Franklyn-SWE/Web-Application-Interface-System-with-Subscription-Based-Access/blob/main/README.md",
+  },
+  {
+    title: "ETF Platform System",
+    summary: "A collaborative Scrum project built with Python and Django to explore ETF purchasing and selling workflows.",
+    url: "https://github.com/Franklyn-SWE/ETF-Platform-System/blob/main/README.md",
+  },
+];
+
 export default function Recruiters() {
   return (
     <div className="max-w-6xl mx-auto px-6 py-12">
@@ -898,6 +916,34 @@ export default function Recruiters() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="mb-12" aria-labelledby="earlier-software-projects">
+        <h2 id="earlier-software-projects" className="text-3xl font-bold mb-3 text-slate-900">
+          Earlier Software Engineering Projects
+        </h2>
+        <p className="text-slate-600 mb-6 max-w-3xl">
+          Projects from my original 2023 portfolio, preserved as part of my software engineering journey.
+        </p>
+        <div className="grid gap-5 md:grid-cols-3">
+          {earlierSoftwareProjects.map((project) => (
+            <article key={project.title} className="flex flex-col rounded-xl border border-slate-200 bg-slate-50 p-6">
+              <h3 className="text-lg font-bold text-slate-900 mb-3">{project.title}</h3>
+              <p className="text-slate-700 text-sm leading-relaxed mb-5">{project.summary}</p>
+              <a href={project.url} target="_blank" rel="noopener noreferrer" className="mt-auto font-semibold text-blue-700 hover:underline">
+                View project repository ↗
+              </a>
+            </article>
+          ))}
+        </div>
+        <a
+          href="https://franklyn-swe.github.io/portfolio/archive/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-flex items-center rounded-lg border border-blue-200 bg-white px-5 py-3 font-semibold text-blue-700 hover:bg-blue-50"
+        >
+          Browse the original 2023 portfolio ↗
+        </a>
       </section>
 
       <section className="mb-12">
