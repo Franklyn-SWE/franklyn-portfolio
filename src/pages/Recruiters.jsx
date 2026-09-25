@@ -64,24 +64,6 @@ const expertiseCategories = [
   },
 ];
 
-const earlierSoftwareProjects = [
-  {
-    title: "Mental Health Detecting System",
-    summary: "A Django application for symptom-based screening, with separate workflows for administrators, nurses and doctors.",
-    url: "https://github.com/Franklyn-SWE/Mental-Health-Detecting-System/blob/main/README.md",
-  },
-  {
-    title: "Research Interface with Subscription Access",
-    summary: "A web application for researchers and scientists using Node.js, Express and MongoDB with subscription-based access.",
-    url: "https://github.com/Franklyn-SWE/Web-Application-Interface-System-with-Subscription-Based-Access/blob/main/README.md",
-  },
-  {
-    title: "ETF Platform System",
-    summary: "A collaborative Scrum project built with Python and Django to explore ETF purchasing and selling workflows.",
-    url: "https://github.com/Franklyn-SWE/ETF-Platform-System/blob/main/README.md",
-  },
-];
-
 export default function Recruiters() {
   return (
     <div className="max-w-6xl mx-auto px-6 py-12">
@@ -925,30 +907,25 @@ export default function Recruiters() {
         <p className="text-slate-600 mb-6 max-w-3xl">
           Projects from my original 2023 portfolio, preserved as part of my software engineering journey.
         </p>
-        <div className="mb-4">
-          <span className="inline-flex rounded-full border border-slate-200 bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-slate-600">
-            2023 archive
-          </span>
+        <div className="rounded-xl border border-slate-200 bg-slate-50 p-6 md:flex md:items-center md:justify-between md:gap-8">
+          <div>
+            <span className="inline-flex rounded-full border border-slate-200 bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-slate-600">
+              2023 archive
+            </span>
+            <h3 className="mt-3 text-lg font-bold text-slate-900">Original Software Engineering Portfolio</h3>
+            <p className="mt-2 text-sm leading-relaxed text-slate-700">
+              Explore the original portfolio and the software engineering projects it documents.
+            </p>
+          </div>
+          <a
+            href="https://franklyn-swe.github.io/portfolio/archive/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 inline-flex items-center justify-center rounded-lg border border-blue-200 bg-white px-5 py-3 font-semibold text-blue-700 hover:bg-blue-50 md:mt-0 md:shrink-0"
+          >
+            View 2023 portfolio ↗
+          </a>
         </div>
-        <div className="grid gap-5 md:grid-cols-3">
-          {earlierSoftwareProjects.map((project) => (
-            <article key={project.title} className="flex flex-col rounded-xl border border-slate-200 bg-slate-50 p-6">
-              <h3 className="text-lg font-bold text-slate-900 mb-3">{project.title}</h3>
-              <p className="text-slate-700 text-sm leading-relaxed mb-5">{project.summary}</p>
-              <a href={project.url} target="_blank" rel="noopener noreferrer" className="mt-auto font-semibold text-blue-700 hover:underline">
-                View project repository ↗
-              </a>
-            </article>
-          ))}
-        </div>
-        <a
-          href="https://franklyn-swe.github.io/portfolio/archive/index.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-6 inline-flex items-center rounded-lg border border-blue-200 bg-white px-5 py-3 font-semibold text-blue-700 hover:bg-blue-50"
-        >
-          Browse the original 2023 portfolio ↗
-        </a>
       </section>
 
       <section className="mb-12">
